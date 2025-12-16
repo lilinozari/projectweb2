@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle.net Login</title>
+    <link rel="icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./src/css/output.css">
+</head>
+<body>
+  <div class="wraper w-[100%] max-w-[1400px] h-[1500px] bg-gray-950 pt-px ">
+    <div class="box w-[550px]  h-[600px]  mt-15 lg:mx-auto  ">
+        <div class="inside flex flex-col">
+            <div class=" img w-full h-[70px] flex justify-center items-center ">
+            <img class="w-[43%] h-[45px]"   src="./images/logo.png" alt="Battle">
+        </div>
+        <!-- #endregion img -->
+         <div class="text-white text-4xl justify-center flex items-center mt-10 font-bold ">Log in</div>
+         <!-- #region text -->
+         <div class="text flex flex-row items-center justify-center mt-3 gap-1.5">
+            <span class="text-[17px] text-white font-semibold">New to Battle.net?</span>
+            <a href="#" class="underline text-blue-700 font-semibold cursor-pointer">Sign up</a>
+         </div>
+         <!-- #endregion text -->
+          <form action="post" class="w-full  h-[60px]  justify-center flex items-center ">
+            <input type="text" placeholder="  Email or Phone " class="w-[85%] border  h-[35px] rounded-[5px] hover:border-blue-800 border-blue-100 ">
+          </form>
+          <a href="#" class="underline text-blue-700 font-bold cursor-pointer ml-[42px] mt-2" >Forgot email?</a>
+           <div class=" flex justify-center items-center">
+            <button
+              class="  mt-[30px] h-10 text-[16px] text-white  w-[85%]  bg-blue-700 hover:bg-[#428cd1] "
+            >
+              Continue
+            </button>
+           </div>
+           <!-- #endregion btn -->
+            <!-- #region text2 -->
+            <div class="text2 flex flex-row mt-2 ml-[43px] gap-1.5 text-neutral-800 ">
+             <span class="">By continuing, you acknowledge our </span>
+             <a href="#" class="font-bold"> Privacy Policy .</a>
+            </div>
+            <!-- #endregion text2 -->
+             <!-- #region or -->
+            <div class="or flex flex-row mt-12 justify-center items-center gap-4">
+                <hr class="w-[35%] border-[#434343]">
+                <span>OR</span>
+                <hr class="w-[35%] border-[#434343]">
+
+            </div>
+            <!-- #endregion or -->
+             <!-- #region logo1 -->
+            <div class=" flex flex-row justify-center gap-4 mt-4">
+             <button class="w-14 h-13 bg-white hover:bg-gray-100 cursor-pointer rounded-lg flex justify-center items-center">
+               <svg  width="40" height="40"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" >
+                 <g><path d="m0 0H512V512H0" fill="#fff"></path><path fill="#34a853" d="M153 292c30 82 118 95 171 60h62v48A192 192 0 0190 341" ></path>
+                  <path fill="#4285f4" d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57" ></path>
+                   <path fill="#fbbc02" d="m90 341a208 200 0 010-171l63 49q-12 37 0 73" ></path>
+                   <path fill="#ea4335" d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"></path></g>
+                </svg>
+             </button>
+             <button class=" bg-blue-500  bgcursor-pointer w-14 h-13  rounded-lg justify-center flex items-center">
+              <svg  width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" >
+ <path fill="white" d="M8 12h5V8c0-6 4-7 11-6v5c-4 0-5 0-5 3v2h5l-1 6h-4v12h-6V18H8z" ></path></svg>
+             </button>
+             <button class="bg-black hover:bg-gray-800 cursor-pointer w-14 h-13  rounded-lg justify-center flex items-center">
+               <svg  width="40" height="40" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 1195 1195" >
+ <path  fill="white"   d="M1006.933 812.8c-32 153.6-115.2 211.2-147.2 249.6-32 25.6-121.6 25.6-153.6 6.4-38.4-25.6-134.4-25.6-166.4 0-44.8 32-115.2 19.2-128 12.8-256-179.2-352-716.8 12.8-774.4 64-12.8 134.4 32 134.4 32 51.2 25.6 70.4 12.8 115.2-6.4 96-44.8 243.2-44.8 313.6 76.8-147.2 96-153.6 294.4 19.2 403.2zM802.133 64c12.8 70.4-64 224-204.8 230.4-12.8-38.4 32-217.6 204.8-230.4z"  ></path>
+                </svg>
+             </button>
+            </div>
+             <!-- #endregion logo1 -->
+              <!-- #region logo2 -->
+              <div class=" flex flex-row justify-center gap-4 mt-5"  >
+              <button class="bg-green-500 hover:bg-green-700 cursor-pointer w-14 h-13  rounded-lg justify-center flex items-center" >
+                 <svg width="30px" height="30px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.852" cx="16" cy="16" r="14" fill="url(#paint0_radial_87_8329)"/>
+<path d="M6.75137 26.5333C6.73227 26.5193 6.7127 26.5016 6.69312 26.4801C6.33073 26.1504 5.74045 25.6304 5.12362 24.8444C4.5909 23.6889 4.89287 21.748 6.20386 19.0075C8.05357 15.1409 11.0131 11.2151 12.2265 9.8225C11.8813 9.43732 10.8119 8.38253 9.29659 7.24477C7.7813 6.10701 6.67738 5.99047 6.29264 6.05961C6.64779 5.67443 7.47646 4.94852 8.17196 4.45964C10.3265 3.39299 14.3081 5.19543 16.0148 6.22257V13.2891C11.6642 16.6372 7.63924 21.8075 6.82536 23.8222C6.20418 25.36 6.44975 26.2128 6.69312 26.4801C6.71325 26.4984 6.73269 26.5161 6.75137 26.5333Z" fill="url(#paint1_linear_87_8329)"/>
+<path d="M6.75137 26.5331C6.73227 26.5191 6.7127 26.5014 6.69311 26.4799C6.33072 26.1502 5.74045 25.6302 5.12362 24.8442C4.5909 23.6887 4.89287 21.7477 6.20386 19.0073C8.35133 14.5183 12.2265 9.82227 12.2265 9.82227C12.2265 9.82227 12.9185 11.5405 14.4888 14.5183C10.4444 18.1034 7.63923 21.8072 6.82536 23.822C6.20418 25.3598 6.44974 26.2126 6.69311 26.4799C6.71325 26.4982 6.73268 26.5159 6.75137 26.5331Z" fill="url(#paint2_linear_87_8329)"/>
+<path d="M25.2779 26.5333C25.297 26.5193 25.3166 26.5016 25.3362 26.4801C25.6986 26.1504 26.2888 25.6304 26.9057 24.8444C27.4384 23.6889 27.1364 21.748 25.8254 19.0075C23.9757 15.1409 21.0162 11.2151 19.8028 9.8225C20.148 9.43732 21.2174 8.38253 22.7327 7.24477C24.248 6.10701 25.3519 5.99047 25.7367 6.05961C25.3815 5.67443 24.5528 4.94852 23.8573 4.45964C21.7028 3.39299 17.7212 5.19543 16.0145 6.22257V13.2891C20.3651 16.6372 24.3901 21.8075 25.2039 23.8222C25.8251 25.36 25.5796 26.2128 25.3362 26.4801C25.316 26.4984 25.2966 26.5161 25.2779 26.5333Z" fill="url(#paint3_linear_87_8329)"/>
+<path d="M25.2779 26.5331C25.297 26.5191 25.3166 26.5014 25.3362 26.4799C25.6986 26.1502 26.2888 25.6302 26.9057 24.8442C27.4384 23.6887 27.1364 21.7477 25.8254 19.0073C23.678 14.5183 19.8028 9.82227 19.8028 9.82227C19.8028 9.82227 19.1108 11.5405 17.5405 14.5183C21.5849 18.1034 24.3901 21.8072 25.2039 23.822C25.8251 25.3598 25.5796 26.2126 25.3362 26.4799C25.3161 26.4982 25.2966 26.5159 25.2779 26.5331Z" fill="url(#paint4_linear_87_8329)"/>
+<defs>
+<radialGradient id="paint0_radial_87_8329" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(16 14.5) rotate(90.0548) scale(15.5)">
+<stop stop-color="#FAFAFA"/>
+<stop offset="0.499976" stop-color="#EFEFEF"/>
+<stop offset="0.828794" stop-color="#C0BEC0"/>
+<stop offset="1" stop-color="#879288"/>
+</radialGradient>
+<linearGradient id="paint1_linear_87_8329" x1="12.9925" y1="4.72589" x2="13.2296" y2="12.7852" gradientUnits="userSpaceOnUse">
+<stop stop-color="#008B00"/>
+<stop offset="1" stop-color="#6CC329"/>
+</linearGradient>
+<linearGradient id="paint2_linear_87_8329" x1="10.1481" y1="12.6667" x2="12.874" y2="16.4" gradientUnits="userSpaceOnUse">
+<stop stop-color="#008C00"/>
+<stop offset="1" stop-color="#48BF21"/>
+</linearGradient>
+<linearGradient id="paint3_linear_87_8329" x1="19.0368" y1="4.72589" x2="18.7997" y2="12.7852" gradientUnits="userSpaceOnUse">
+<stop stop-color="#008B00"/>
+<stop offset="1" stop-color="#6CC329"/>
+</linearGradient>
+<linearGradient id="paint4_linear_87_8329" x1="21.8812" y1="12.6667" x2="19.1553" y2="16.4" gradientUnits="userSpaceOnUse">
+<stop stop-color="#008C00"/>
+<stop offset="1" stop-color="#48BF21"/>
+</linearGradient>
+</defs>
+</svg>
+              </button>
+              <button class="bg-blue-700  hover:bg-blue-900 cursor-pointer w-14 h-13  rounded-lg justify-center flex items-center  ">
+                <svg fill="#ffffff" version="1.1"
+  id="Capa_1"  xmlns="http://www.w3.org/2000/svg"  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="40" height="40"   viewBox="0 0 37.951 37.951"
+  xml:space="preserve"   >
+ <g id="SVGRepo_bgCarrier" stroke-width="0"></g>    <g
+ id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" ></g>  <g id="SVGRepo_iconCarrier">
+<g> <path  d="M13.228,26.882l-0.045,2.895c0,0-1.778,0.918-5.747,0.873C3.469,30.603-0.043,29.501,0,27.108 c0.045-2.391,6.568-5.012,13.136-6.113v3.355l-6.979,1.838c0,0-1.194,1.521,0.411,1.564C10.22,27.858,13.228,26.882,13.228,26.882z M23.399,18.928c0,0,1.003,1.657,3.649,1.38c0.946-0.1,3.647-3.496,1.914-8.735c-1.731-5.239-14.321-7.354-14.321-7.354v27.033 l5.792,2.482l0.091-24.46l2.874,1.195L23.399,18.928L23.399,18.928z M29.283,21.962c0,0-3.828,0.188-7.298,1.701 c-0.032,0.016,0,2.852,0,2.852l8.803-2.068l3.103,1.379l-11.949,4.186v3.17c0,0,13.637-4.414,15.644-6.113 C39.589,25.364,32.886,21.136,29.283,21.962z"
+ ></path></g></g> </svg>
+              </button>
+              <button class=" bg-red-600  hover:bg-red-800 cursor-pointer  w-14 h-13  rounded-lg justify-center flex items-center "  >
+ <svg  fill="#fff" width="30" height="30" viewBox="0 0 32 32"
+  xmlns="http://www.w3.org/2000/svg"  stroke="#fff"
+ >
+ <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+ <g  id="SVGRepo_tracerCarrier"
+ stroke-linecap="round" stroke-linejoin="round"
+ ></g>
+ <g id="SVGRepo_iconCarrier">  <path
+  d="M18.901 32h4.901c4.5 0 8.198-3.698 8.198-8.198v-15.604c0-4.5-3.698-8.198-8.198-8.198h-5c-0.099 0-0.203 0.099-0.203 0.198v31.604c0 0.099 0.099 0.198 0.302 0.198zM25 14.401c1.802 0 3.198 1.5 3.198 3.198 0 1.802-1.5 3.198-3.198 3.198-1.802 0-3.198-1.396-3.198-3.198-0.104-1.797 1.396-3.198 3.198-3.198zM15.198 0h-7c-4.5 0-8.198 3.698-8.198 8.198v15.604c0 4.5 3.698 8.198 8.198 8.198h7c0.099 0 0.203-0.099 0.203-0.198v-31.604c0-0.099-0.099-0.198-0.203-0.198zM12.901 29.401h-4.703c-3.099 0-5.599-2.5-5.599-5.599v-15.604c0-3.099 2.5-5.599 5.599-5.599h4.604zM5 9.599c0 1.698 1.302 3 3 3s3-1.302 3-3c0-1.698-1.302-3-3-3s-3 1.302-3 3z"
+     ></path>  </g>  </svg>
+              </button>
+              <button class="bg-white hover:bg-gray-200 cursor-pointer  w-14 h-13  rounded-lg justify-center flex items-center " >
+<svg   width="20px"  height="20px" viewBox="0 0 24 24"xmlns="http://www.w3.org/2000/svg" fill="#000000" > <g id="SVGRepo_bgCarrier" stroke-width="0"></g> <g id="SVGRepo_tracerCarrier"  stroke-linecap="round"   stroke-linejoin="round"  ></g>  <g id="SVGRepo_iconCarrier"> <g>
+  <path fill="none" d="M0 0H24V24H0z"></path>  <path
+d="M12.004 2c-5.25 0-9.556 4.05-9.964 9.197l5.36 2.216c.454-.31 1.002-.492 1.593-.492.053 0 .104.003.157.005l2.384-3.452v-.049c0-2.08 1.69-3.77 3.77-3.77 2.079 0 3.77 1.692 3.77 3.772s-1.692 3.771-3.77 3.771h-.087l-3.397 2.426c0 .043.003.088.003.133 0 1.562-1.262 2.83-2.825 2.83-1.362 0-2.513-.978-2.775-2.273l-3.838-1.589C3.573 18.922 7.427 22 12.005 22c5.522 0 9.998-4.477 9.998-10 0-5.522-4.477-10-9.999-10zM7.078 16.667c.218.452.595.832 1.094 1.041 1.081.45 2.328-.063 2.777-1.145.22-.525.22-1.1.004-1.625-.215-.525-.625-.934-1.147-1.152-.52-.217-1.075-.208-1.565-.025l1.269.525c.797.333 1.174 1.25.84 2.046-.33.797-1.247 1.175-2.044.843l-1.228-.508zm10.74-7.245c0-1.385-1.128-2.512-2.513-2.512-1.387 0-2.512 1.127-2.512 2.512 0 1.388 1.125 2.513 2.512 2.513 1.386 0 2.512-1.125 2.512-2.513zM15.31 7.53c1.04 0 1.888.845 1.888 1.888s-.847 1.888-1.888 1.888c-1.044 0-1.888-.845-1.888-1.888s.845-1.888 1.888-1.888z"
+        ></path>  </g>   </g>   </svg>
+              </button>
+              </div>
+              <!-- #endregion logo2 -->
+           
+        </div>
+        <!-- #endregion inside -->
+    </div>
+    <!-- #endregion box -->
+
+
+
+     <!-- #region footer lg -->
+     <footer class="w-full lg:flex flex-col h-[250px] mx-auto mt-25 lg:w-[1200px] hidden">
+       <div class="top w-full h-[100px] flex flex-row ">
+        <!-- #region words -->
+        <div class="words w-[90%] flex items-end  text-[15px] font-semibold text-white">
+            <a href="#" class="w-[85px] h-[45px] rounded-[10px] p-2 hover:bg-[#212329] text-center items-center">Careers</a>
+            <a href="./about.html" class="w-[85px] h-[45px] rounded-[10px] p-2 hover:bg-[#212329] text-center items-center" >About</a>
+            <a href="#" class="w-[85px] h-[45px] rounded-[10px] p-2 hover:bg-[#212329] text-center items-center">Support</a>
+            <a href="#" class="w-[85px] h-[45px] rounded-[10px] p-2 hover:bg-[#212329] text-center items-center">ContactUs</a>
+            <a href="#" class="w-[85px] h-[45px] rounded-[10px] p-2 hover:bg-[#212329] text-center items-center ">Press</a>
+            <a href="#"class="w-[85px] h-[45px] rounded-[10px] p-2  hover:bg-[#212329] text-center items-center" > API</a>
+        </div>
+        <!-- #endregion words -->
+         <!-- #region language -->
+          <div class="language p-2.5 w-[18%] flex items-center 
+         text-[20px] font-bold text-white  justify-start">
+ <div class="lang text-end w-[40%]">
+  <details class="dropdown">
+  <summary class="btn m-1 btn-active
+   text-[#C4C5C7] p-4 border-0  rounded-[15px] bg-gray-900
+  hover:border-0 hover:bg-[#212329] ]">
+ <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#323232" stroke-width="2"/>
+<path d="M12 3.05554C14.455 5.25282 16 8.44597 16 12C16 15.554 14.455 18.7471 12 20.9444" stroke="#323232" stroke-width="2" stroke-linecap="round"/>
+<path d="M12.0625 21C9.57126 18.8012 8 15.5841 8 12C8 8.41592 9.57126 5.19883 12.0625 3" stroke="#323232" stroke-width="2" stroke-linecap="round"/>
+<path d="M3 12H21" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="text-white font-bold text-[20px]"> English(US)</span> 
+            <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 9L11.7874 14.7874V14.7874C11.9048 14.9048 12.0952 14.9048 12.2126 
+14.7874V14.7874L18 9" stroke="#323232" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round"/>
+            </svg>
+ </summary>
+ <ul class="menu dropdown-content flex flex-row  overflow-x-hidden
+  overflow-scroll bg-[#171926] right-0 rounded-box z-1 w-[450px] h-[430px] top-[-430px] p-2" >
+ <ul class="w-[48%] ml-0 flex flex-col justify-baseline">
+   <li class="flex flex-row w-full">
+   <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 
+   shadow-sm hover:text-white hover:bg-[#272930]">
+   <span class="w-[13%] h-full"></span>
+  <div class="card-body items-start justify-center gap-0 h-[60%] flex p-0 w-[85%]" >
+   <h6 class="card-title h-[40%] text-[16px]"> English(US)  </h6>
+    </div>
+   </div>
+  </li>
+ <li class="flex flex-row w-full">
+<div class="card w-full h-[45px] flex flex-row mt-2 
+mb-1 shadow-sm hover:text-white hover:bg-[#272930]" >
+ <span class="w-[13%] h-full"></span>
+<div class="card-body items-start justify-center gap-0 h-[60%] flex p-0 w-[85%]">
+<h6 class="card-title h-[40%] text-[16px]"> English(SEA) </h6>
+ </div>
+</div>
+ </li>
+ <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1
+ shadow-sm hover:text-white hover:bg-[#272930]">
+  <span class="w-[13%] h-full"></span>
+ <div class="card-body items-start justify-center gap-0 h-[60%] flex p-0 w-[85%]" >
+ <h6 class="card-title h-[40%] text-[16px]"> Español (Latino)</h6>
+   </div>
+ </div>
+ </li>
+ <li class="flex flex-row w-full">
+<div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm hover:text-white
+ hover:bg-[#272930]" >
+<span class="w-[13%] h-full"></span>
+<div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+<h6 class="card-title h-[40%] text-[16px]"> Português (Brasil)  </h6>
+ </div>
+</div>
+ </li>
+ <li class="flex flex-row w-full">
+<div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+ hover:text-white hover:bg-[#272930]" >
+  <span class="w-[13%] h-full"></span>
+<div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+ <h6 class="card-title h-[40%] text-[16px]">  ภาษาไทย </h6>
+ </div>
+ </div>
+</li>
+<li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+  <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+<h6 class="card-title h-[40%] text-[16px]">日本語</h6>
+</div>
+</div>
+  </li>
+ <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+<span class="w-[13%] h-full"></span>
+<div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+<h6 class="card-title h-[40%] text-[16px]">  Deutsch</h6>
+ </div>
+</div>
+ </li>
+ <li class="flex flex-row w-full">
+<div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+ hover:text-white hover:bg-[#272930]">
+ <span class="w-[13%] h-full"></span>
+ <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+ <h6 class="card-title h-[40%] text-[16px]">  English(UE) </h6>
+ </div>
+ </div>
+</li>
+ <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+  hover:text-white hover:bg-[#272930]" >
+ <span class="w-[13%] h-full"></span>
+  <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+<h6 class="card-title h-[40%] text-[16px]"> Español (EU) </h6></div>
+ </div>
+ </li>
+ </ul>
+ <ul class="w-[49%] flex flex-col justify-baseline">
+  <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+  <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+  <h6 class="card-title h-[40%] text-[16px]"> Français </h6>
+   </div>
+   </div>
+  </li>
+ <li class="flex flex-row w-full">
+ <div
+  class="card w-full h-[45px] flex flex-row mt-2 mb-1 
+  shadow-sm hover:text-white hover:bg-[#272930]">
+  <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+     <h6 class="card-title h-[40%] text-[16px]"> Italiano </h6>
+  </div>
+  </div>
+  </li>
+   <li class="flex flex-row w-full">
+  <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+   hover:text-white hover:bg-[#272930]">
+   <span class="w-[13%] h-full"></span>
+  <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+   <h6 class="card-title h-[40%] text-[16px]">Polski</h6>
+     </div>
+   </div>
+</li>
+    <li class="flex flex-row w-full">
+<div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+ hover:text-white hover:bg-[#272930]" >
+  <span class="w-[13%] h-full"></span>
+ <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+  <h6 class="card-title h-[40%] text-[16px]">Português (EU)</h6>
+     </div>
+   </div>
+ </li>
+  <li class="flex flex-row w-full">
+   <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+    hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+ <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+  <h6 class="card-title h-[40%] text-[16px]">  Русский </h6>
+   </div>
+  </div>
+ </li>
+ <li class="flex flex-row w-full">
+  <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 
+  shadow-sm hover:text-white hover:bg-[#272930]">
+       <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+ <h6 class="card-title h-[40%] text-[16px]">Türkçe</h6>
+  </div>
+  </div>
+</li>
+<li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+<div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+   <h6 class="card-title h-[40%] text-[16px]">한국어</h6> </div>
+   </div>
+   </li>
+    <li class="flex flex-row w-full">
+   <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+    hover:text-white hover:bg-[#272930]" >
+    <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]"  >
+ <h6 class="card-title h-[40%] text-[16px]"> 繁體中文 </h6>
+                 </div>
+             </div>
+          </li>
+   <li class="flex flex-row w-full">
+  <div class="card w-full h-[45px] flex flex-row mt-2 mb-1
+   shadow-sm hover:text-white hover:bg-[#272930]" >
+                        <span class="w-[13%] h-full"></span>
+   <div  class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+<h6 class="card-title h-[40%] text-[16px]">  简体中 </h6>
+       </div>
+     </div>
+   </li>
+ </ul>
+ </ul>
+ </details>
+ </div>
+</div>
+          <!-- #endregion language -->
+
+
+
+         </div>
+        <!-- #endregion top -->
+        
+      <hr class="bg-gray-700">
+      <!-- #region bottom -->
+    <div class="bottom w-full h-[150px] ">
+      <!-- #region inside -->
+<div class="inside flex ">
+ <a class=" w-[20%]" href="index.html"><img src="./images/logo.png" alt="" class="w-[200px] h-fit mt-3"></a>
+ <!-- #region textfooter -->
+<div class="flex flex-col w-[60%] p-2 text-gray-400">
+<span>©2025 Blizzard Entertainment, Inc.</span>
+<div class="flex flex-row gap-3">
+  All
+<span class="underline text-[#b3b4b6] hover:text-white cursor-pointer"> trademarks </span>
+<span> referenced herein are the properties of their respective owners. </span>
+</div>
+ <div class="foot gap-3 flex flex-wrap mt-5 text-[15px] text-gray-400">
+ <a class="hover:text-white" href="#">Privacy</a>
+ <a class="hover:text-white" href="#">Legal</a>
+ <a class="hover:text-white" href="#">Terms</a>
+ <a class="hover:text-white" href="#">Cookie Policy</a>
+<a class="hover:text-white" href="#">Cookie Settings</a>
+           </div>
+</div>
+<!-- #endregion textfooter -->
+ <!-- #region logofooter  -->
+<div class="w-[15%]   h-fit flex  flex-row justify-evenly items-center mt-5">
+  <button class="w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200"> 
+    <svg aria-label="X logo" width="20" height="18" viewBox="0 0 300 271" xmlns="http://www.w3.org/2000/svg" > <path fill="currentColor"
+       d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z"
+   /></svg>
+  </button>
+  <button class="w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200"  ">
+    <svg  width="16"  height="16"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" >
+   <path  fill="white"  d="M8 12h5V8c0-6 4-7 11-6v5c-4 0-5 0-5 3v2h5l-1 6h-4v12h-6V18H8z" ></path> </svg> 
+ </button>
+<button class=" w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200" ">
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>instagram [#167]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+
+</defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#000000">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+
+</path>
+            </g>
+        </g>
+    </g>
+</svg>
+</button>
+</div>
+<!-- #endregion logofooter -->
+</div>
+<!-- #endregion inside -->
+    </div>
+    <!-- #endregion bottom -->
+     </footer>
+     <!-- #endregion footer lg -->
+
+ <!-- #region footer -->
+    <footer class="w-full bg-gray-950 h-screen flex  lg:hidden">
+      <div class="inside flex flex-col justify-center items-center">
+          <!-- #region language -->
+         <div class=" w-[60%] text-center ">
+              <details class="dropdown  ">
+                <summary 
+                  class="btn  btn-active text-white  border-0 flex 
+                  hover:border-0 hover:bg-[#212329] bg-gray-900 g-3">
+                  <svg width="23px" height="23px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#323232" stroke-width="2"/>
+<path d="M12 3.05554C14.455 5.25282 16 8.44597 16 12C16 15.554 14.455 18.7471 12 20.9444" stroke="#323232" stroke-width="2" stroke-linecap="round"/>
+<path d="M12.0625 21C9.57126 18.8012 8 15.5841 8 12C8 8.41592 9.57126 5.19883 12.0625 3" stroke="#323232" stroke-width="2" stroke-linecap="round"/>
+<path d="M3 12H21" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="text-white font-bold text-[20px]"> English (US)</span> 
+            <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 9L11.7874 14.7874V14.7874C11.9048 14.9048 12.0952 14.9048 12.2126 
+14.7874V14.7874L18 9" stroke="#323232" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round"/>
+            </svg>
+   </summary>
+ <ul class="menu dropdown-content h-[460px]  top-[-430px] right-[-100px] 
+ overflow-scroll flex bg-gray-900 text-white rounded-box z-1 w-[400px]  " >
+ <ul class="w-full ml-0 flex flex-col justify-baseline">
+   <li class="flex flex-row w-full">
+     <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 
+     shadow-sm hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+   <div class="card-body items-start justify-center gap-0 h-[60%] flex p-0 w-[85%]">
+ <h6 class="card-title h-[40%] text-[16px]">  English(US)  </h6>
+         </div>
+     </div>
+</li>
+<li class="flex flex-row w-full">
+  <div class="card w-full h-[45px] flex flex-row 
+  mt-2 mb-1 shadow-sm hover:text-white hover:bg-[#272930]">
+ <span class="w-[13%] h-full"></span>
+  <div class="card-body items-start justify-center gap-0 h-[60%] flex p-0 w-[85%]">
+    <h6 class="card-title h-[40%] text-[16px]"> English(SEA) </h6>
+  </div>
+ </div>
+</li>
+  <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 
+ shadow-sm hover:text-white hover:bg-[#272930]">
+  <span class="w-[13%] h-full"></span>
+   <div class="card-body items-start justify-center gap-0 h-[60%] flex p-0 w-[85%]" >
+ <h6 class="card-title h-[40%] text-[16px]"> Español (Latino) </h6>
+   </div>
+  </div>
+</li>
+<li class="flex flex-row w-full">
+<div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+hover:text-white hover:bg-[#272930]">
+  <span class="w-[13%] h-full]"></span>
+ <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+ <h6 class="card-title h-[40%] text-[16px]"> Português (Brasil)</h6>
+   </div>
+  </div>
+ </li>
+   <li class="flex flex-row w-full">
+   <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+    hover:text-white hover:bg-[#272930]" >
+     <span class="w-[13%] h-full"></span>
+  <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+     <h6 class="card-title h-[40%] text-[16px]"> ภาษาไทย  </h6>
+       </div>
+     </div>
+ </li>
+<li class="flex flex-row w-full">
+   <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+    hover:text-white hover:bg-[#272930]" >
+     <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+       <h6 class="card-title h-[40%] text-[16px]">日本語</h6> </div>
+            </div>
+          </li>
+     <li class="flex flex-row w-full">
+   <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 
+   shadow-sm hover:text-white hover:bg-[#272930]">
+       <span class="w-[13%] h-full"></span>
+       <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+    <h6 class="card-title h-[40%] text-[16px]">Deutsch </h6>
+          </div>
+       </div>
+    </li>
+ <li class="flex flex-row w-full">
+    <div class="card w-full h-[45px] flex flex-row mt-2 mb-1
+     shadow-sm hover:text-white hover:bg-[#272930]" >
+     <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+    <h6 class="card-title h-[40%] text-[16px]"> English(UE)</h6>
+            </div>
+         </div>
+        </li>
+     
+<li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+  <span class="w-[13%] h-full"></span>
+        <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+       <h6 class="card-title h-[40%] text-[16px]"> Français  </h6>
+         </div>
+       </div>
+    </li>
+  <li class="flex flex-row w-full">
+     <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+     hover:text-white hover:bg-[#272930]">
+   <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+    <h6 class="card-title h-[40%] text-[16px]"> Italiano  </h6>
+           </div>
+       </div>
+    </li>
+ <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+    <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+  <h6 class="card-title h-[40%] text-[16px]">Polski</h6>
+     </div>
+   </div>
+</li>
+  <li class="flex flex-row w-full">
+    <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+    hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+      <div  class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]"  >
+        <h6 class="card-title h-[40%] text-[16px]"> Português (EU) </h6>
+         </div>
+        </div>
+       </li>
+  <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+  <span class="w-[13%] h-full"></span>
+    <div  class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+ <h6 class="card-title h-[40%] text-[16px]"> Русский </h6>
+        </div>
+       </div>
+     </li>
+ <li class="flex flex-row w-full">
+  <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+  hover:text-white hover:bg-[#272930]"  >
+        <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+         <h6 class="card-title h-[40%] text-[16px]">Türkçe</h6>
+              </div>
+        </div>
+  </li>
+  <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+  hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+<div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+    <h6 class="card-title h-[40%] text-[16px]">한국어</h6>
+           </div>
+        </div>
+     </li>
+  <li class="flex flex-row w-full">
+    <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+     hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+<div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+  <h6 class="card-title h-[40%] text-[16px]"> 繁體中文 </h6>
+           </div>
+          </div>
+       </li>
+ <li class="flex flex-row w-full">
+  <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+  hover:text-white hover:bg-[#272930]">
+     <span class="w-[13%] h-full"></span>
+  <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+     <h6 class="card-title h-[40%] text-[16px]"> 简体中文  </h6>
+               </div>
+            </div>
+         </li>
+       </ul>
+      </ul>
+    </details>
+ </div>
+        
+         <!-- #endregion language -->
+        <div class="w-[80%] h-15  mt-5 flex leading-9 justify-center gap-3 text-white font-bold text-[22px]">
+        
+           <a href="#" class="w-fit  h-15 rounded-[10px] p-2 hover:bg-[#212329] text-center items-center">Careers</a>
+            <a href="#" class="w-fit h-15 rounded-[10px] p-2 hover:bg-[#212329] text-center items-center" >About</a>
+            <a href="#" class="w-fit h-15 rounded-[10px] p-2 hover:bg-[#212329] text-center items-center">Support</a>
+
+         </div>
+
+          <div  class="w-[80%] h-15   flex leading-9 justify-center gap-3 text-white font-bold text-[20px]"   >
+            <a href="#" class="w-fit h-15 rounded-[10px] p-2 hover:bg-[#212329] text-center items-center">ContactUs</a>
+            <a href="#" class="w-fit h-15 rounded-[10px] p-2 hover:bg-[#212329] text-center items-center ">Press</a>
+            <a href="#"class="w-fit h-15 rounded-[10px] p-2  hover:bg-[#212329] text-center items-center" > API</a>
+      
+          </div>
+            
+          <div><img src="./images/logo.png" alt="" class="w-[250px] h-[70px] mt-5"></div>
+
+          <div class="w-[80%] h-12 mt-8 flex  flex-row justify-center gap-20">
+         <button class="w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200"> 
+    <svg aria-label="X logo" width="20" height="18" viewBox="0 0 300 271" xmlns="http://www.w3.org/2000/svg" > <path fill="currentColor"
+       d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z"
+   /></svg>
+  </button>
+  <button class="w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200"  >
+   <svg width="20px" height="20px" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>facebook [#176]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+
+</defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)" fill="#000000">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id="facebook-[#176]">
+
+</path>
+            </g>
+        </g>
+    </g>
+</svg>
+ </button>
+
+ <button class="w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200"  >
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>instagram [#167]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+
+</defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#000000">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+
+</path>
+            </g>
+        </g>
+    </g>
+</svg>
+ </button>
+ 
+     </div>
+ <!-- #region textfooter -->
+<div class="flex flex-col w-[70%] g-3 p-2 text-gray-400 mt-5 justify-center items-center">
+<span class="text-[16px] text-center">©2025 Blizzard Entertainment, Inc.</span>
+<div class="flex flex-col gap-3 text-center">
+ <div class="text-[16px]">
+   All
+<span class="underline text-[#b3b4b6] hover:text-white cursor-pointer"> trademarks </span>
+<span> referenced herein are the properties of</span>
+<span class="text-[16px] mb-3"> their respective owners. </span>
+</div>
+
+</div>
+</div>
+
+  <div class="foot gap-4 flex flex-wrap mt-5 text-[18px] text-gray-400 justify-center items-center">
+ <a class="hover:text-white" href="#">Privacy</a>
+ <a class="hover:text-white" href="#">Legal</a>
+ <a class="hover:text-white" href="#">Terms</a>
+ <a class="hover:text-white" href="#">Cookie Policy</a>
+<a class="hover:text-white" href="#">Cookie Settings</a>
+           </div> 
+
+
+
+
+      </div>
+      <!-- #endregion inside -->
+
+    </footer>
+<!-- #endregion footer -->
+
+
+
+
+
+
+
+
+
+    
+     
+
+
+
+  </div>
+ <!-- #endregion wraper -->
+
+</body>
+</html>
