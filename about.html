@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- #region wraperabout -->
-  <div class="wraper w-[100%] flex flex-col ">
+  <div class="wraper w-[100%] flex flex-col lg:w-[100%] ">
     <!-- #region header -->
      <div class=" w-full h-20 fixed z-10 lg:hidden flex bg-gray-900
       justify-center items-center ">
@@ -943,17 +943,18 @@ fill="gray"/>
    
    
      <!-- #region video -->
- <div class="w-full z-0  mx-auto h-screen relative overflow-hidden lg:h-[760px] ">
+ <div class="w-full z-0  mx-auto h-[630px]  relative overflow-hidden lg:h-[630px] ">
 
-  <div class="video relative h-[760px]  max-w-[2500px] mx-auto z-0 overflow-hidden">
+  <div class="video relative h-[710px]  max-w-[2500px] mx-auto z-0 overflow-hidden">
 <video src="./images/about/firstvideo.mp4" class="absolute top-0 left-0 w-full h-full object-cover z-0" autoplay loop muted  >
  
 </video>
  </div>
-<div class="absolute top-0 left-0 w-full z-50 h-full text-white flex flex-col justify-center items-center max-w-[2500px] inset-0">
-  <div class="text-[30px] mb-2.5 font-bold ">Our vision</div>
+<div class="absolute top-0 left-0 w-full z-50 h-full text-white flex flex-col justify-center
+p-4 items-center  inset-0">
+  <div class="text-[30px] mb-2.5 font-bold text-center ">Our vision</div>
 
-  <div class="head lg:text-[80px] text-[40px] leading-[100%] text-center">
+  <div class="head lg:text-[65px] font-bold text-[40px] leading-[100%] text-center ">
     Foster Joy and Belonging for Everyone
    </div>
  </div>
@@ -966,21 +967,25 @@ fill="gray"/>
  </div>
 </div>
  <!-- #endregion video -->
-  <!-- #region text2 -->
-  <div class="w-full lg:max-w-[2500px] lg:h-[750px] bg-indigo-950  mx-auto  ">
-    <span class="text-[35px] text-white font-bold flex justify-center items-end w-full h-30">Our Mission</span>
-    <div class="flex flex-col g-9 mt-2 text-white text-center text-bold text-2xl lg:text-[60px] lg:font-extrabold">
+
+  <!-- #region text2  about-->
+  <div class="w-full lg:max-w-[2500px] lg:h-[850px]  bg-indigo-950  mx-auto  ">
+    <span class="text-[30px]  text-white font-bold flex justify-center items-end w-full h-40">Our Mission</span>
+    <div class="flex flex-col g-9 mt-2 text-white text-center text-bold text-2xl lg:text-[50px] lg:font-bold">
       <span class="  flex justify-center">To craft genre-defining games </span>
     <span class="  flex justify-center" >and legendary worlds for </span>
     <span class="  flex justify-center " >all to share.</span>
     </div>
    <div class="lg:flex lg:justify-center lg:items-center lg:mt-6">
-     <span class="flex justify-center items-center text-blue-300 text-center font-bold lg:text-[24px] lg:w-[52%]" >We want to redefine what games can be and how you experience them. We aim to balance the love and attention our craft demands while delivering at the speed players expect. Through unparalleled creativity and storytelling, we create immersive universes and iconic characters that are beloved across platforms, borders, backgrounds, and generations - only made possible by building a work environment that nurtures the artistry of game development and unleashes the aspirations of our people.</span>
+     <span class="flex justify-center items-center text-blue-300 text-center font-bold
+      lg:text-[24px] lg:w-[52%]" >
+      We want to redefine what games can be and how you experience them. We aim to balance the love and attention our craft demands while delivering at the speed players expect. Through unparalleled creativity and storytelling, we create immersive universes and iconic characters that are beloved across platforms, borders, backgrounds, and generations - only made possible by building a work environment that nurtures the artistry of game development and unleashes the aspirations of our people.</span>
    </div>
 
   </div>
-  <!-- #endregion text2 -->
-   <!-- #region photos -->
+  <!-- #endregion text2 about-->
+
+   <!-- #region photos card -->
    <div class="w-full lg:max-w-[2500px] lg:h-[70%] bg-blue-600 mx-auto  " >
     <span class="text-[30px] text-white font-bold flex justify-center items-end w-full h-30">What We Live By</span>
 <div class="flex flex-col  mt-1 text-white text-center text-bold text-2xl lg:text-[65px] lg:font-extrabold">
@@ -990,8 +995,9 @@ fill="gray"/>
     <span class="flex justify-center items-center text-blue-100 text-center  lg:text-[24px] lg:w-[52%]"  >Our values reflect the heart and soul of Blizzard. They serve as the foundation of our culture and as the guideposts for how we treat one another, show up for our players, and make decisions.</span>
     </div>
     <!-- photo band1 -->
-    <div class="lg:max-w-[2500px] flex flex-col  w-full mt-8  justify-center items-center ">
-      <div class="flex lg:flex-row lg:max-w-[2500px] lg:w-[75%] lg:gap-11 flex-col ">
+    <div class="lg:max-w-[2500px] flex flex-col  w-full mt-8 justify-center items-center ">
+      <div class="flex lg:flex-row  lg:justify-center lg:max-w-[2500px] lg:w-[75%] lg:gap-11 flex-col ">
+        
            <div class="w-[400px] h-[620px]  transition-all flex justify-center flex-col duration-400 ease-in-out hover:scale-103">
            <img src="./images/about/ax1.png"  alt="" class="w-[400px] h-[550px] object-cover shadow-black shadow-xl ">
            <span class="font-bold text-white mt-8 w-full h-[15%] text-center text-[30px]">For the Love of Play</span>
@@ -1011,7 +1017,7 @@ fill="gray"/>
     <!-- photo band1 end -->
    <!-- photo band2 -->
 <div class="lg:max-w-[2500px] flex flex-col  w-full mt-8  justify-center items-center ">
-      <div class="flex lg:flex-row lg:max-w-[2500px] lg:w-[55%] lg:gap-11 flex-col ">
+      <div class="flex lg:flex-row lg:max-w-[2500px] lg:w-[55%] lg:gap-11 flex-col lg:justify-center ">
            <div class="w-[400px] h-[620px]  transition-all flex justify-center flex-col duration-400 ease-in-out hover:scale-103">
            <img src="./images/about/ax4.png"  alt="" class="w-[400px] h-[550px] object-cover shadow-black shadow-xl ">
            <span class="font-bold text-white mt-8 w-full h-[15%] text-center text-[30px]">Strength in Diversit</span>
@@ -1322,24 +1328,24 @@ clip-rule="evenodd"/></svg>
 
 
 <!-- #region footerlg -->
-<footer class="w-full lg:max-w-[1200] h-[700px] bg-gray-800 lg:flex flex-col hidden">
- <div class="top w-[96%]   h-[100px] flex flex-row mt-40">
-        <div class="w-[80%] ml-5">
+<footer class="w-full  mx-auto lg:max-w-[2500px] justify-center h-[700px] bg-gray-800 lg:flex flex-col hidden">
+ <div class="top w-full  justify-start  items-center h-[100px] flex flex-row">
+        <div class="w-[65%]  ml-5">
           <!-- #region words -->
-        <div class="words w-[90%]  p-7  justify-center flex items-center gap-4 text-[20px] font-bold text-white leading-2 text-center">
+        <div class="words w-[95%]  p-7  justify-center flex items-center gap-4 text-[20px] font-semibold text-white leading-2 text-center">
             <a href="#" class="w-fit h-[45px] rounded-[10px] p-3 hover:bg-[#212329] text-center items-center">Careers</a>
             <a href="#" class="w-fit h-[45px] rounded-[10px] p-3 hover:bg-[#212329] text-center items-center" >About</a>
             <a href="#" class="w-fit h-[45px] rounded-[10px] p-3 hover:bg-[#212329] text-center items-center">Support</a>
             <a href="#" class="w-fit h-[45px] rounded-[10px] p-3 hover:bg-[#212329] text-center items-center">ContactUs</a>
             <a href="#" class="w-fit h-[45px] rounded-[10px] p-3 hover:bg-[#212329] text-center items-center ">Press</a>
             <a href="#"class="w-fit h-[45px] rounded-[10px] p-3  hover:bg-[#212329] text-center items-center" > API</a>
-            <a href="#"class="w-fit h-[45px] rounded-[10px] p-3  hover:bg-[#212329] text-center items-center" > Site Map</a>
+            <a href="#"class="w-fit h-[45px] rounded-[10px] p-3  hover:bg-[#212329] text-center items-center" > SiteMap</a>
          </div>
         <!-- #endregion words -->
         </div>
          <!-- #region language -->
-         <div class="language p-2.5 w-[18%] flex items-center 
-         text-[20px] font-bold text-white  justify-start">
+         <div class="language p-2.5 w-[20%]  flex items-center 
+         text-[20px] font-bold text-white  justify-end">
  <div class="lang text-end w-[40%]">
   <details class="dropdown">
   <summary class="btn m-1 btn-active
@@ -1537,15 +1543,15 @@ mb-1 shadow-sm hover:text-white hover:bg-[#272930]" >
         <!-- #endregion top -->
  <hr class="bg-gray-700  text-center justify-center flex ">
       <!-- #region bottom -->
-    <div class="bottom w-[98%] h-[150px]  mx-auto max-w-[1200px] ">
+    <div class="bottom  w-full h-[150px]  mx-auto max-w-[1600px] ">
       <!-- #region inside -->
 <div class="inside flex ">
- <div class="w-[35%] flex justify-start  items-center">
+ <div class="w-[23%]  flex justify-end  items-center">
 <a class=" w-fit " href="index.html">
-  <img src="./images/about/logobliz.png" alt="" class="w-[300px] h-fit  mb-8 p-8  "></a>
+  <img src="./images/about/logobliz.png" alt="" class="w-[250px] h-fit  mb-8 p-9  "></a>
  </div>
  <!-- #region textfooter -->
-<div class="flex flex-col w-full p-2 text-gray-400 mb-5 justify-center">
+<div class="flex flex-col w-[57%] p-2 text-gray-400 mb-5 justify-center ">
 <span>©2025 Blizzard Entertainment, Inc.</span>
 <div class="flex flex-row gap-3">
   All
@@ -1562,7 +1568,7 @@ mb-1 shadow-sm hover:text-white hover:bg-[#272930]" >
 </div>
 <!-- #endregion textfooter -->
  <!-- #region logofooter -->
-<div class="w-[65%]   h-fit flex flex-row justify-evenly items-center mt-5">
+<div class="w-[10%] gap-3  h-fit flex  flex-row p-5 items-center mt-5">
    <button class="w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200"> 
     <svg aria-label="X logo" width="20" height="18" viewBox="0 0 300 271" xmlns="http://www.w3.org/2000/svg" > <path fill="currentColor"
        d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z"
