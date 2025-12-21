@@ -7,11 +7,11 @@
   <link rel="icon" href="./images/favicon.png">
   <link rel="stylesheet" href="./src/css/output.css">
 </head>
-<body>
+<body class=" bg-gray-950">
   <!-- #region wraper index -->
   <div class="w-full bg-gray-950 ">
     <!-- #region header phone -->
-    <div class="w-full  h-30 fixed flex justify-center items-center  ">
+    <div class="w-full  h-30 fixed flex justify-center items-center lg:hidden z-50 ">
       <!--#region inside header phone  -->
       <div class="flex-col flex  w-full h-30   ">
 
@@ -1041,10 +1041,1410 @@ fill="white"/>
 <!-- #endregion header phone -->
 
 <!-- #region header lg -->
-<div>
+<div class="w-full bg-gray-950 lg:flex hidden mx-auto max-w-[1500px] flex-col h-20">
+
+<!-- #region top header lg -->
+<div class="w-full  flex justify-center  h-20  ">
+<div class="w-[95%] flex flex-row">
+
+<!-- #region logo  -->
+ <a  class="w-[55%]  h-20 flex justify-start items-center " href="./index.html">
+  <img src="./images/logo.png" alt=""  class="w-[30%]">
+ </a>
+ <!-- #endregion logo -->
+       <!-- #region section2 top -->
+     <div class="w-[45%]  flex flex-row justify-center  items-center">
+ 
+      <div class="flex flex-row text-[15px] text-white gap-1 w-fit h-10 p-2 hover:bg-[#212329] rounded-[5px] text-center">
+        <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.5" d="M3 15C3 17.8284 3 19.2426 3.87868 20.1213C4.75736 21 6.17157 21 9 21H15C17.8284 21 19.2426 21 20.1213 20.1213C21 19.2426 21 17.8284 21 15" 
+stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 3V16M12 16L16 11.625M12 16L8 11.625" stroke="white" stroke-width="1.5" 
+stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<span class="font-bold ">Download Battle.net</span>
+      </div>
+
+ <div class="flex flex-row text-[15px] text-white gap-1 w-fit h-10 p-2 hover:bg-[#212329] rounded-[5px] text-center">
+    <svg
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM3.00683 12C3.00683 16.9668 7.03321 20.9932 12 20.9932C16.9668 20.9932 20.9932 16.9668 20.9932 12C20.9932 7.03321 16.9668 3.00683 12 3.00683C7.03321 3.00683 3.00683 7.03321 3.00683 12Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M13.5 18C13.5 18.8284 12.8284 19.5 12 19.5C11.1716 19.5 10.5 18.8284 10.5 18C10.5 17.1716 11.1716 16.5 12 16.5C12.8284 16.5 13.5 17.1716 13.5 18Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M11 12V14C11 14 11 15 12 15C13 15 13 14 13 14V12C13 12 13.4792 11.8629 13.6629 11.7883C13.6629 11.7883 13.9969 11.6691 14.2307 11.4896C14.4646 11.3102 14.6761 11.097 14.8654 10.8503C15.0658 10.6035 15.2217 10.3175 15.333 9.99221C15.4443 9.66693 15.5 9.4038 15.5 9C15.5 8.32701 15.3497 7.63675 15.0491 7.132C14.7596 6.61604 14.3476 6.21786 13.8132 5.93745C13.2788 5.64582 12.6553 5.5 11.9427 5.5C11.4974 5.5 11.1021 5.55608 10.757 5.66825C10.4118 5.7692 10.1057 5.9094 9.83844 6.08887C9.58236 6.25712 9.36525 6.4478 9.18711 6.66091C9.02011 6.86281 8.8865 7.0591 8.78629 7.24978C8.68609 7.44046 8.61929 7.6087 8.58589 7.75452C8.51908 7.96763 8.49125 8.14149 8.50238 8.27609C8.52465 8.41069 8.59145 8.52285 8.70279 8.61258C8.81413 8.70231 8.9867 8.79765 9.22051 8.8986C9.46546 8.97712 9.65473 9.00516 9.78834 8.98273C9.93308 8.96029 10.05 8.89299 10.1391 8.78083C10.1391 8.78083 10.6138 8.10569 10.7474 7.97109C10.8922 7.82528 11.0703 7.71312 11.2819 7.6346C11.4934 7.54487 11.7328 7.5 12 7.5C12.579 7.5 13.0076 7.64021 13.286 7.92062C13.5754 8.18982 13.6629 8.41629 13.6629 8.93225C13.6629 9.27996 13.6017 9.56038 13.4792 9.77349C13.3567 9.9866 13.1953 10.1605 12.9949 10.2951C12.9949 10.2951 12.7227 10.3991 12.5 10.5C12.2885 10.5897 11.9001 10.7381 11.6997 10.8503C11.5104 10.9512 11.4043 11.0573 11.2819 11.2144C11.1594 11.3714 11 11.7308 11 12Z"
+                              fill="white"
+                            />
+                          </g>
+                        </svg>  
+<span class="font-bold ">Support</span>
+      </div>
+
+
+
+   <div class="dropdown dropdown-end">
+  <div tabindex="0" role="button" class="btn m-1 bg-gray-950 hover:bg-[#212329] rounded-[5px]
+   border-none shadow-none text-white  text-[18px] gap-2 p-4 font-bold">
+    <svg width="15px" height="15px" viewBox="0 0 24 24" id="Layer_1" 
+data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><defs>
+<style>.cls-1{fill:none;stroke:white;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+</defs><circle class="cls-1" cx="12" cy="7.25" r="5.73"/><path class="cls-1"
+ d="M1.5,23.48l.37-2.05A10.3,10.3,0,0,1,12,13h0a10.3,10.3,0,0,1,10.13,8.45l.37,2.05"/></svg>
+ Account
+  </div>
+  <ul tabindex="-1" class="dropdown-content menu bg-gray-900 text-white
+   rounded-box z-1 w-60 p-2 shadow-sm">
+   
+    <li>
+      <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl h-8
+ bg-blue-600 border-none shadow-none hover:bg-blue-800 text-white mt-5">
+
+Log In
+</button>
+    </li>
+    <li class="mt-3 flex flex-row g-2 w-full h-10 items-center text-[15px] hover:bg-[#212329]  ">
+<svg width="40px" height="40px" viewBox="0 0 24 24" id="Layer_1" 
+data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><defs>
+<style>.cls-1{fill:none;stroke:white;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+</defs><circle class="cls-1" cx="12" cy="7.25" r="5.73"/><path class="cls-1"
+ d="M1.5,23.48l.37-2.05A10.3,10.3,0,0,1,12,13h0a10.3,10.3,0,0,1,10.13,8.45l.37,2.05"/></svg>
+      Account Settings
+    </li>
+
+<li class="mt-3 flex flex-row g-2 w-full h-10 items-center text-[15px] hover:bg-[#212329] ">
+<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" 
+clip-rule="evenodd" 
+d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="white" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round"/>
+</svg>
+    Wish List
+    </li>
+
+<li class="mt-3 flex flex-row g-2 w-full h-10 items-center text-[15px] hover:bg-[#212329] ">
+<svg fill="white" width="40px" height="40px" viewBox="-4 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<title>barcode</title>
+<path d="M0 25.281h0.781v-18.563h-0.781v18.563zM2.344 25.281h1.531v-18.563h-1.531v18.563zM5.406 25.281h1.563v-18.563h-1.563v18.563zM8.5 25.281h3.125v-18.563h-3.125v18.563zM13.156 25.281h2.344v-18.563h-2.344v18.563zM17.031 25.281h1.563v-18.563h-1.563v18.563zM20.125 25.281h0.781v-18.563h-0.781v18.563zM22.469 25.281h1.531v-18.563h-1.531v18.563z"></path>
+</svg>
+    Redeem Code
+    </li>
+
+<li class="mt-3 flex flex-row g-2 w-full h-10 items-center text-[15px] hover:bg-[#212329] ">
+<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 11C14 10.4477 14.4477 10 15 10C15.5523 10 16 10.4477 16 11V13C16 13.5523 15.5523 14 15 14C14.4477 14 14 13.5523 14 13V11Z" stroke="gray" stroke-width="1.5"/>
+<path d="M14.0079 19.0029L13.2579 19.0007V19.0007L14.0079 19.0029ZM14.0137 17L14.7637 17.0022V17H14.0137ZM3.14958 18.8284L2.61991 19.3594H2.61991L3.14958 18.8284ZM3.14958 5.17157L2.61991 4.64058L2.61991 4.64058L3.14958 5.17157ZM2.95308 10.2537L2.58741 10.9085H2.58741L2.95308 10.2537ZM2.01058 8.98947L1.26124 8.95797L2.01058 8.98947ZM2.95308 13.7463L2.58741 13.0915L2.58741 13.0915L2.95308 13.7463ZM2.01058 15.0105L2.75992 14.979L2.01058 15.0105ZM21.0469 10.2537L21.4126 10.9085L21.0469 10.2537ZM21.9894 8.98947L22.7388 8.95797V8.95797L21.9894 8.98947ZM20.8504 5.17157L21.3801 4.64058L21.3801 4.64058L20.8504 5.17157ZM21.0469 13.7463L20.6812 14.4012V14.4012L21.0469 13.7463ZM21.9894 15.0105L22.7388 15.042V15.042L21.9894 15.0105ZM20.8504 18.8284L21.3801 19.3594L21.3801 19.3594L20.8504 18.8284ZM21.9437 14.332L22.5981 13.9656L22.5981 13.9656L21.9437 14.332ZM21.9437 9.66803L22.5981 10.0344L22.5981 10.0344L21.9437 9.66803ZM2.05634 14.332L1.4019 13.9656L1.4019 13.9656L2.05634 14.332ZM2.05634 9.66802L2.71079 9.30168L2.71078 9.30168L2.05634 9.66802ZM14.0137 7H14.7637L14.7637 6.99782L14.0137 7ZM14.0064 4.49855L13.2564 4.50073V4.50073L14.0064 4.49855ZM16.5278 4.0189L16.5471 3.26915L16.5278 4.0189ZM17.0336 19.9642L17.0653 20.7135H17.0653L17.0336 19.9642ZM13.8595 19.8541L13.3299 19.323L13.3299 19.323L13.8595 19.8541ZM14.7579 19.0051L14.7637 17.0022L13.2637 16.9978L13.2579 19.0007L14.7579 19.0051ZM15.0162 16.75C15.1574 16.75 15.2687 16.8637 15.2687 17H16.7687C16.7687 16.0317 15.9823 15.25 15.0162 15.25V16.75ZM15.0162 15.25C14.0501 15.25 13.2637 16.0317 13.2637 17H14.7637C14.7637 16.8637 14.875 16.75 15.0162 16.75V15.25ZM9.99502 4.75H13.5052V3.25H9.99502V4.75ZM13.0079 19.25H9.99502V20.75H13.0079V19.25ZM9.99502 19.25C8.08355 19.25 6.72521 19.2484 5.69469 19.1102C4.68554 18.9749 4.10384 18.721 3.67925 18.2974L2.61991 19.3594C3.3698 20.1074 4.32051 20.4393 5.4953 20.5969C6.64871 20.7516 8.12585 20.75 9.99502 20.75V19.25ZM9.99502 3.25C8.12585 3.25 6.64871 3.24841 5.4953 3.4031C4.32051 3.56066 3.3698 3.89255 2.61991 4.64058L3.67925 5.70256C4.10384 5.27902 4.68554 5.02513 5.69469 4.88979C6.72521 4.75159 8.08355 4.75 9.99502 4.75V3.25ZM2.58741 10.9085C2.97311 11.1239 3.23007 11.533 3.23007 12H4.73007C4.73007 10.9664 4.1586 10.0678 3.31876 9.59884L2.58741 10.9085ZM2.75992 9.02097C2.83795 7.16494 3.09146 6.28889 3.67925 5.70256L2.61991 4.64058C1.59036 5.66758 1.34012 7.08185 1.26124 8.95797L2.75992 9.02097ZM3.23007 12C3.23007 12.467 2.97311 12.8761 2.58741 13.0915L3.31876 14.4012C4.1586 13.9322 4.73007 13.0336 4.73007 12H3.23007ZM1.26124 15.042C1.34012 16.9182 1.59036 18.3324 2.61991 19.3594L3.67925 18.2974C3.09146 17.7111 2.83795 16.8351 2.75992 14.979L1.26124 15.042ZM20.7699 12C20.7699 11.533 21.0269 11.1239 21.4126 10.9085L20.6812 9.59884C19.8414 10.0678 19.2699 10.9664 19.2699 12H20.7699ZM22.7388 8.95797C22.6599 7.08185 22.4096 5.66758 21.3801 4.64058L20.3207 5.70256C20.9085 6.28889 21.1621 7.16494 21.2401 9.02097L22.7388 8.95797ZM21.4126 13.0915C21.0269 12.8761 20.7699 12.467 20.7699 12H19.2699C19.2699 13.0336 19.8414 13.9322 20.6812 14.4012L21.4126 13.0915ZM21.2401 14.979C21.1621 16.8351 20.9085 17.7111 20.3207 18.2974L21.3801 19.3594C22.4096 18.3324 22.6599 16.9182 22.7388 15.042L21.2401 14.979ZM20.6812 14.4012C20.9652 14.5597 21.1507 14.6636 21.2761 14.7427C21.3379 14.7817 21.3653 14.8024 21.3735 14.8093C21.388 14.8213 21.3375 14.7846 21.2892 14.6983L22.5981 13.9656C22.5153 13.8177 22.4043 13.7154 22.3304 13.6542C22.2503 13.5878 22.1613 13.5276 22.0764 13.4741C21.9087 13.3683 21.6804 13.2411 21.4126 13.0915L20.6812 14.4012ZM22.7388 15.042C22.746 14.8706 22.7541 14.6937 22.7476 14.5458C22.741 14.3959 22.7178 14.1795 22.5981 13.9656L21.2892 14.6983C21.2386 14.6079 21.2461 14.5457 21.249 14.6117C21.2503 14.6404 21.2505 14.6822 21.2488 14.7464C21.2472 14.8104 21.244 14.8847 21.2401 14.979L22.7388 15.042ZM21.4126 10.9085C21.6804 10.7589 21.9087 10.6317 22.0764 10.5259C22.1613 10.4724 22.2503 10.4122 22.3304 10.3458C22.4043 10.2846 22.5153 10.1823 22.5981 10.0344L21.2892 9.30168C21.3375 9.21543 21.388 9.17871 21.3735 9.19072C21.3653 9.19756 21.3379 9.21832 21.2761 9.25725C21.1507 9.33637 20.9652 9.44028 20.6812 9.59884L21.4126 10.9085ZM21.2401 9.02097C21.244 9.11528 21.2472 9.18961 21.2488 9.25357C21.2505 9.31779 21.2503 9.35964 21.249 9.38827C21.2461 9.45428 21.2386 9.39206 21.2892 9.30169L22.5981 10.0344C22.7178 9.82054 22.741 9.60408 22.7476 9.45419C22.7541 9.30634 22.746 9.12945 22.7388 8.95797L21.2401 9.02097ZM2.58741 13.0915C2.31959 13.2411 2.0913 13.3683 1.92358 13.4741C1.83872 13.5276 1.74971 13.5878 1.66957 13.6542C1.59566 13.7154 1.48474 13.8177 1.4019 13.9656L2.71078 14.6983C2.6625 14.7846 2.61198 14.8213 2.62648 14.8093C2.63474 14.8024 2.66215 14.7817 2.72387 14.7427C2.84929 14.6636 3.03482 14.5597 3.31876 14.4012L2.58741 13.0915ZM2.75992 14.979C2.75595 14.8847 2.75285 14.8104 2.7512 14.7464C2.74954 14.6822 2.74973 14.6404 2.75099 14.6117C2.75389 14.5457 2.76137 14.6079 2.71078 14.6983L1.4019 13.9656C1.28221 14.1795 1.25903 14.3959 1.25244 14.5458C1.24593 14.6937 1.25403 14.8706 1.26124 15.042L2.75992 14.979ZM3.31876 9.59884C3.03482 9.44028 2.84929 9.33637 2.72386 9.25725C2.66214 9.21832 2.63474 9.19756 2.62648 9.19072C2.61198 9.17871 2.66251 9.21543 2.71079 9.30168L1.4019 10.0344C1.48473 10.1823 1.59565 10.2846 1.66956 10.3458C1.74971 10.4122 1.83872 10.4724 1.92357 10.5259C2.0913 10.6317 2.31959 10.7589 2.58741 10.9085L3.31876 9.59884ZM1.26124 8.95797C1.25403 9.12945 1.24593 9.30634 1.25244 9.45419C1.25903 9.60408 1.28221 9.82054 1.4019 10.0344L2.71078 9.30168C2.76137 9.39206 2.75389 9.45428 2.75099 9.38827C2.74973 9.35964 2.74954 9.31779 2.7512 9.25357C2.75285 9.18961 2.75595 9.11528 2.75992 9.02097L1.26124 8.95797ZM14.7637 6.99782L14.7564 4.49637L13.2564 4.50073L13.2637 7.00218L14.7637 6.99782ZM15.0162 7.25C14.875 7.25 14.7637 7.13631 14.7637 7H13.2637C13.2637 7.96826 14.0501 8.75 15.0162 8.75V7.25ZM15.2687 7C15.2687 7.13631 15.1574 7.25 15.0162 7.25V8.75C15.9823 8.75 16.7687 7.96826 16.7687 7H15.2687ZM15.2687 4.51618V7H16.7687V4.51618H15.2687ZM16.5084 4.76865C18.6966 4.82509 19.6778 5.06124 20.3208 5.70256L21.3801 4.64058C20.2676 3.53084 18.6939 3.32452 16.5471 3.26915L16.5084 4.76865ZM16.7687 4.51618C16.7687 4.656 16.6534 4.77239 16.5084 4.76865L16.5471 3.26915C15.8429 3.25099 15.2687 3.81835 15.2687 4.51618H16.7687ZM13.5052 4.75C13.3698 4.75 13.2568 4.64027 13.2564 4.50073L14.7564 4.49637C14.7544 3.80569 14.1931 3.25 13.5052 3.25V4.75ZM17.0653 20.7135C18.9399 20.6343 20.353 20.384 21.3801 19.3594L20.3208 18.2974C19.7336 18.8831 18.8563 19.1365 17.002 19.2148L17.0653 20.7135ZM15.2687 17V18.9765H16.7687V17H15.2687ZM13.2579 19.0007C13.2575 19.121 13.2572 19.2136 13.255 19.2926C13.2528 19.3721 13.249 19.4192 13.245 19.4481C13.2411 19.4764 13.2396 19.4669 13.2513 19.4387C13.2654 19.4045 13.2911 19.3617 13.3299 19.323L14.389 20.3852C14.6246 20.1502 14.701 19.8709 14.7311 19.6521C14.7582 19.4548 14.7573 19.219 14.7579 19.0051L13.2579 19.0007ZM13.0079 20.75C13.2218 20.75 13.4576 20.7516 13.6549 20.7251C13.8739 20.6957 14.1534 20.6201 14.389 20.3852L13.3299 19.323C13.3687 19.2843 13.4116 19.2587 13.4458 19.2447C13.4741 19.2331 13.4836 19.2346 13.4553 19.2384C13.4264 19.2423 13.3792 19.246 13.2998 19.248C13.2208 19.25 13.1282 19.25 13.0079 19.25V20.75ZM17.002 19.2148C16.8812 19.2199 16.7889 19.2238 16.7101 19.225C16.631 19.2262 16.5849 19.2244 16.5575 19.2217C16.5309 19.2191 16.5426 19.2175 16.5734 19.2292C16.6103 19.2433 16.6536 19.2685 16.6917 19.305L15.6536 20.3878C15.8978 20.6219 16.183 20.6921 16.4108 20.7145C16.6127 20.7344 16.8518 20.7225 17.0653 20.7135L17.002 19.2148ZM15.2687 18.9765C15.2687 19.1953 15.267 19.4374 15.295 19.6397C15.3263 19.8655 15.407 20.1514 15.6536 20.3878L16.6917 19.305C16.7313 19.343 16.7584 19.3863 16.7737 19.4221C16.7863 19.4516 16.7848 19.4622 16.7808 19.4337C16.7768 19.4046 16.7729 19.3566 16.7708 19.2753C16.7687 19.1945 16.7687 19.0997 16.7687 18.9765H15.2687Z"
+ fill="gray"/>
+</svg>
+    Change BattleTag
+    </li>
+
+
+<li class="mt-3 flex flex-row g-2 w-full h-10 items-center text-[15px] hover:bg-[#212329] bg-gray-800 ">
+<svg width="45px" height="45px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.2942 7.95881C13.5533 7.63559 13.5013 7.16358 13.178 6.90453C12.8548 6.64549 12.3828 6.6975 12.1238 7.02072L13.2942 7.95881ZM6.811 14.8488L7.37903 15.3385C7.38489 15.3317 7.39062 15.3248 7.39623 15.3178L6.811 14.8488ZM6.64 15.2668L5.89146 15.2179L5.8908 15.2321L6.64 15.2668ZM6.5 18.2898L5.7508 18.2551C5.74908 18.2923 5.75013 18.3296 5.75396 18.3667L6.5 18.2898ZM7.287 18.9768L7.31152 19.7264C7.36154 19.7247 7.41126 19.7181 7.45996 19.7065L7.287 18.9768ZM10.287 18.2658L10.46 18.9956L10.4716 18.9927L10.287 18.2658ZM10.672 18.0218L11.2506 18.4991L11.2571 18.491L10.672 18.0218ZM17.2971 10.959C17.5562 10.6358 17.5043 10.1638 17.1812 9.90466C16.8581 9.64552 16.386 9.69742 16.1269 10.0206L17.2971 10.959ZM12.1269 7.02052C11.8678 7.34365 11.9196 7.81568 12.2428 8.07484C12.5659 8.33399 13.0379 8.28213 13.2971 7.95901L12.1269 7.02052ZM14.3 5.50976L14.8851 5.97901C14.8949 5.96672 14.9044 5.95412 14.9135 5.94123L14.3 5.50976ZM15.929 5.18976L16.4088 4.61332C16.3849 4.59344 16.3598 4.57507 16.3337 4.5583L15.929 5.18976ZM18.166 7.05176L18.6968 6.52192C18.6805 6.50561 18.6635 6.49007 18.6458 6.47532L18.166 7.05176ZM18.5029 7.87264L19.2529 7.87676V7.87676L18.5029 7.87264ZM18.157 8.68976L17.632 8.15412C17.6108 8.17496 17.5908 8.19704 17.5721 8.22025L18.157 8.68976ZM16.1271 10.0203C15.8678 10.3433 15.9195 10.8153 16.2425 11.0746C16.5655 11.3339 17.0376 11.2823 17.2969 10.9593L16.1271 10.0203ZM13.4537 7.37862C13.3923 6.96898 13.0105 6.68666 12.6009 6.74805C12.1912 6.80943 11.9089 7.19127 11.9703 7.60091L13.4537 7.37862ZM16.813 11.2329C17.2234 11.1772 17.5109 10.7992 17.4552 10.3888C17.3994 9.97834 17.0215 9.69082 16.611 9.74659L16.813 11.2329ZM12.1238 7.02072L6.22577 14.3797L7.39623 15.3178L13.2942 7.95881L12.1238 7.02072ZM6.24297 14.359C6.03561 14.5995 5.91226 14.9011 5.89159 15.218L7.38841 15.3156C7.38786 15.324 7.38457 15.3321 7.37903 15.3385L6.24297 14.359ZM5.8908 15.2321L5.7508 18.2551L7.2492 18.3245L7.3892 15.3015L5.8908 15.2321ZM5.75396 18.3667C5.83563 19.1586 6.51588 19.7524 7.31152 19.7264L7.26248 18.2272C7.25928 18.2273 7.25771 18.2268 7.25669 18.2264C7.25526 18.2259 7.25337 18.2249 7.25144 18.2232C7.2495 18.2215 7.24825 18.2198 7.24754 18.2185C7.24703 18.2175 7.24637 18.216 7.24604 18.2128L5.75396 18.3667ZM7.45996 19.7065L10.46 18.9955L10.114 17.536L7.11404 18.247L7.45996 19.7065ZM10.4716 18.9927C10.7771 18.9151 11.05 18.7422 11.2506 18.499L10.0934 17.5445C10.0958 17.5417 10.0989 17.5397 10.1024 17.5388L10.4716 18.9927ZM11.2571 18.491L17.2971 10.959L16.1269 10.0206L10.0869 17.5526L11.2571 18.491ZM13.2971 7.95901L14.8851 5.97901L13.7149 5.04052L12.1269 7.02052L13.2971 7.95901ZM14.9135 5.94123C15.0521 5.74411 15.3214 5.6912 15.5243 5.82123L16.3337 4.5583C15.4544 3.99484 14.2873 4.2241 13.6865 5.0783L14.9135 5.94123ZM15.4492 5.7662L17.6862 7.6282L18.6458 6.47532L16.4088 4.61332L15.4492 5.7662ZM17.6352 7.58161C17.7111 7.6577 17.7535 7.761 17.7529 7.86852L19.2529 7.87676C19.2557 7.36905 19.0555 6.88127 18.6968 6.52192L17.6352 7.58161ZM17.7529 7.86852C17.7524 7.97604 17.7088 8.07886 17.632 8.15412L18.682 9.22541C19.0446 8.87002 19.2501 8.38447 19.2529 7.87676L17.7529 7.86852ZM17.5721 8.22025L16.1271 10.0203L17.2969 10.9593L18.7419 9.15928L17.5721 8.22025ZM11.9703 7.60091C12.3196 9.93221 14.4771 11.5503 16.813 11.2329L16.611 9.74659C15.0881 9.95352 13.6815 8.89855 13.4537 7.37862L11.9703 7.60091Z" 
+fill="white"/>
+</svg>
+   create account
+    </li>
+
+
+
+
+  </ul>
+ 
+
+      </div>
+
+
+
+     </div>
+<!-- #endregion section2 top -->
+
+
+       </div>
+     </div>
+
+
+
+</div>
+</div>
+<!-- #endregion top header lg -->
+
+<!-- #region bottom header lg -->
+<div class="w-full h-20 bg-gray-950 flex justify-center mx-auto max-w-[1500px] ">
+<div class="w-[95%]  h-20  gap-x-3 flex flex-row ">
+<!-- #region nav1 bottom -->
+<div class="w-[70%] bg-white/5 rounded-[5px]  items-center flex h-15 container">
+
+  <div class="dropdown dropdown-hover">
+  <div tabindex="0" role="button" class="btn  text-white
+   bg-white/5 border-none shadow-none hover:bg-[#212329] h-15">
+   Warcraft
+   <svg  class="mt-2" width="8px" height="8px" viewBox="0 -3 16 16" 
+id="meteor-icon-kit__solid-chevron-down-s" fill="none"
+ xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" 
+ d="M3.06066 0.93934L8 5.8787L12.9393 0.93934C13.5251 0.35355 14.4749 0.35355 15.0607 0.93934C15.6464 1.52513 15.6464 2.4749 15.0607 3.0607L9.0607 9.0607C8.4749 9.6464 7.5251 9.6464 6.9393 9.0607L0.93934 3.0607C0.35355 2.4749 0.35355 1.52513 0.93934 0.93934C1.52513 0.35355 2.47487 0.35355 3.06066 0.93934z" 
+ fill="white"/>
+</svg>
+  </div>
+  <ul tabindex="-1" class="dropdown-content menu  rounded-box z-1 w-65 bg-white/5
+   p-2 shadow-sm">
+    <li><a class="flex flex-row w-full hover:bg-[#212329] " >
+      <img src="./images/about/menu1.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[12px] ml-4" >World of Warcraft</span>
+        <span class="text-gray-400 font-semibold text-[10px] ml-4">MMORPG</span>
+      </div>
+    </a></li>
+
+   <li><a class="flex flex-row w-full hover:bg-[#212329] " >
+      <img src="./images/about/menu3.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[12px] ml-4" >World of Warcraft: Midnight</span>
+      <div class="flex flex-row gap-3">
+          <span class="text-gray-400 font-semibold text-[10px] ml-4">Expansion</span>
+      </div>
+      </div>
+    </a></li>
+
+    <li><a class="flex flex-row w-full hover:bg-[#212329] " >
+      <img src="./images/about/menu5.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[12px] ml-4" >Warcraft Rumble</span>
+        <span class="text-gray-400 font-semibold text-[10px] ml-4">Mobile Action Strategy</span>
+      </div>
+    </a></li>
+
+    <li><a class="flex flex-row w-full hover:bg-[#212329] " >
+      <img src="./images/about/menu6.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[12px] ml-4" >Warcraft I: Remastered</span>
+        <span class="text-gray-400 font-semibold text-[10px] ml-4">Real-Time Strategy</span>
+      </div>
+    </a></li>
+</ul>
+</div>
+
+<div class="dropdown dropdown-hover">
+  <div tabindex="0" role="button" class="btn  text-white bg-white/5
+   border-none shadow-none hover:bg-[#212329] h-15">
+   Diablo
+   <svg  class="mt-2" width="8px" height="8px" viewBox="0 -3 16 16" 
+id="meteor-icon-kit__solid-chevron-down-s" fill="none"
+ xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" 
+ d="M3.06066 0.93934L8 5.8787L12.9393 0.93934C13.5251 0.35355 14.4749 0.35355 15.0607 0.93934C15.6464 1.52513 15.6464 2.4749 15.0607 3.0607L9.0607 9.0607C8.4749 9.6464 7.5251 9.6464 6.9393 9.0607L0.93934 3.0607C0.35355 2.4749 0.35355 1.52513 0.93934 0.93934C1.52513 0.35355 2.47487 0.35355 3.06066 0.93934z" 
+ fill="white"/>
+</svg>
+  </div>
+
+<ul tabindex="-1" class="dropdown-content menu  rounded-box z-1 w-65 bg-white/5
+   p-2 shadow-sm">
+<li><a class="flex flex-row w-full hover:bg-[#212329] " >
+      <img src="./images/about/menu21.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[12px] ml-4" >Diablo IV</span>
+        <span class="text-gray-400 font-semibold text-[10px] ml-4">Action RPG</span>
+      </div>
+    </a></li>
+
+<li><a class="flex flex-row w-full hover:bg-[#212329] " >
+      <img src="./images/about/menu21.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[12px] ml-4" >Diablo IV: Vessel of Hatred</span>
+        <span class="text-gray-400 font-semibold text-[10px] ml-4">Action RPG</span>
+      </div>
+    </a></li>
+<li><a class="flex flex-row w-full hover:bg-[#212329] " >
+      <img src="./images/about/menu22.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[12px] ml-4" >Diablo Immortal</span>
+        <span class="text-gray-400 font-semibold text-[10px] ml-4">Action RPG</span>
+      </div>
+    </a></li>
+
+<li><a class="flex flex-row w-full  " >
+      <img src="./images/about/menu23.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[12px] ml-4" >Diablo II: Resurrected</span>
+        <span class="text-gray-400 font-semibold text-[10px] ml-4">Action RPG</span>
+      </div>
+    </a></li>
+
+    <li><a class="flex flex-row w-full hover:bg-[#212329] " >
+      <img src="./images/about/menu24.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[12px] ml-4" >Diablo III</span>
+        <span class="text-gray-400 font-semibold text-[10px] ml-4">Action RPG</span>
+      </div>
+    </a></li>
+</ul>
+</div>
+
+ <div class="dropdown dropdown-hover">
+  <div tabindex="0" role="button" class="btn  text-white bg-white/5
+    border-none shadow-none hover:bg-[#212329] h-15">
+   Overwatch
+   <svg  class="mt-2" width="8px" height="8px" viewBox="0 -3 16 16" 
+id="meteor-icon-kit__solid-chevron-down-s" fill="none"
+ xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" 
+ d="M3.06066 0.93934L8 5.8787L12.9393 0.93934C13.5251 0.35355 14.4749 0.35355 15.0607 0.93934C15.6464 1.52513 15.6464 2.4749 15.0607 3.0607L9.0607 9.0607C8.4749 9.6464 7.5251 9.6464 6.9393 9.0607L0.93934 3.0607C0.35355 2.4749 0.35355 1.52513 0.93934 0.93934C1.52513 0.35355 2.47487 0.35355 3.06066 0.93934z" 
+ fill="white"/>
+</svg>
+  </div>
+
+<ul tabindex="-1" class="dropdown-content menu  rounded-box z-1 w-65 bg-white/5
+   p-2 shadow-sm">
+ <li><a class="flex flex-row w-full hover:bg-[#212329] " >
+      <img src="./images/about/menu31.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[12px] ml-4" >Overwatch 2</span>
+        <span class="text-gray-400 font-semibold text-[10px] ml-4">Team-Based Action</span>
+      </div>
+    </a></li>
+   </ul>
+</div>
+
+<div class="dropdown dropdown-hover">
+  <div tabindex="0" role="button" class="btn  text-white bg-white/5
+   border-none shadow-none hover:bg-[#212329] h-15">
+   Hearthstone
+   <svg  class="mt-2" width="8px" height="8px" viewBox="0 -3 16 16" 
+id="meteor-icon-kit__solid-chevron-down-s" fill="none"
+ xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" 
+ d="M3.06066 0.93934L8 5.8787L12.9393 0.93934C13.5251 0.35355 14.4749 0.35355 15.0607 0.93934C15.6464 1.52513 15.6464 2.4749 15.0607 3.0607L9.0607 9.0607C8.4749 9.6464 7.5251 9.6464 6.9393 9.0607L0.93934 3.0607C0.35355 2.4749 0.35355 1.52513 0.93934 0.93934C1.52513 0.35355 2.47487 0.35355 3.06066 0.93934z" 
+ fill="white"/>
+</svg>
+  </div>
+<ul tabindex="-1" class="dropdown-content menu  rounded-box z-1 w-65 bg-white/5
+   p-2 shadow-sm">
+<li><a class="flex flex-row w-full  hover:bg-[#212329] " >
+      <img src="./images/about/menu41.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[13px] ml-4" >Hearthstone</span>
+        <span class="text-gray-400 font-semibold text-[10px] ml-4">Strategy Card Game</span>
+      </div>
+    </a></li>
+
+ </ul>
+</div>
+
+
+
+<div class="dropdown dropdown-hover">
+  <div tabindex="0" role="button" class="btn  text-white bg-white/5
+    border-none shadow-none hover:bg-[#212329] h-15">
+   Callofduty
+   <svg  class="mt-2" width="8px" height="8px" viewBox="0 -3 16 16" 
+id="meteor-icon-kit__solid-chevron-down-s" fill="none"
+ xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" 
+ d="M3.06066 0.93934L8 5.8787L12.9393 0.93934C13.5251 0.35355 14.4749 0.35355 15.0607 0.93934C15.6464 1.52513 15.6464 2.4749 15.0607 3.0607L9.0607 9.0607C8.4749 9.6464 7.5251 9.6464 6.9393 9.0607L0.93934 3.0607C0.35355 2.4749 0.35355 1.52513 0.93934 0.93934C1.52513 0.35355 2.47487 0.35355 3.06066 0.93934z" 
+ fill="white"/>
+</svg>
+  </div>
+<ul tabindex="-1" class="dropdown-content menu  rounded-box z-1 w-70  overflow-scroll bg-white/5
+   p-2 shadow-sm">
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/cod/cod3.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+Warzone
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Action Shooter
+  </div>
+  </div>
+ </div>
+   </li>
+   
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/cod/cod4.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+  Modern Warfare III
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Action Shooter
+  </div>
+  </div>
+ </div>
+   </li>
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/cod/cod5.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+Modern Warfare II
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Action Shooter
+  </div>
+  </div>
+ </div>
+   </li>
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/cod/cod6.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+Vanguard
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Action Shooter
+  </div>
+  </div>
+ </div>
+   </li>
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/cod/cod7.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+Black Ops Cold War
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Action Shooter
+  </div>
+  </div>
+ </div>
+   </li>
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/cod/cod8.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+Modern Warfare
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Action Shooter
+  </div>
+  </div>
+ </div>
+   </li>
+
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/cod/cod9.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+Modern Warfare II
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Action Shooter
+  </div>
+  </div>
+ </div>
+   </li>
+
+
+   <li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/cod/cod10.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+Black Ops 4
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Action Shooter
+  </div>
+  </div>
+ </div>
+   </li>
+   </ul>
+</div>
+
+
+<div class="dropdown dropdown-hover">
+  <div tabindex="0" role="button" class="btn  text-white bg-white/5
+   border-none shadow-none hover:bg-[#212329] h-15">
+   Starcraft
+   <svg  class="mt-2" width="8px" height="8px" viewBox="0 -3 16 16" 
+id="meteor-icon-kit__solid-chevron-down-s" fill="none"
+ xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" 
+ d="M3.06066 0.93934L8 5.8787L12.9393 0.93934C13.5251 0.35355 14.4749 0.35355 15.0607 0.93934C15.6464 1.52513 15.6464 2.4749 15.0607 3.0607L9.0607 9.0607C8.4749 9.6464 7.5251 9.6464 6.9393 9.0607L0.93934 3.0607C0.35355 2.4749 0.35355 1.52513 0.93934 0.93934C1.52513 0.35355 2.47487 0.35355 3.06066 0.93934z" 
+ fill="white"/>
+</svg>
+  </div>
+ <ul tabindex="-1" class="dropdown-content menu  rounded-box z-1 w-65 bg-white/5
+   p-2 shadow-sm">
+  
+<li><a class="flex flex-row w-full  hover:bg-[#212329]   " >
+      <img src="./images/about/menu51.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[12px] ml-4" >StarCraft II</span>
+        <span class="text-gray-400 font-semibold text-[10px] ml-4">Real-Time Strategy</span>
+      </div>
+    </a></li>
+
+<li><a class="flex flex-row w-full  hover:bg-[#212329]  " >
+      <img src="./images/about/menu52.png" alt="" class="w-10 h-fit ">
+      <div class="flex flex-col g-4">
+        <span class="text-white font-semibold text-[12px] ml-4" >StarCraft II</span>
+        <span class="text-gray-400 font-semibold text-[10px] ml-4">Real-Time Strategy</span>
+      </div>
+    </a></li>
+ </ul>
+</div>
+
+
+<div class="dropdown dropdown-hover ">
+  <div tabindex="0" role="button" class="btn  text-white bg-white/5
+    border-none shadow-none hover:bg-[#212329] h-15">
+   More
+   <svg  class="mt-2" width="8px" height="8px" viewBox="0 -3 16 16" 
+id="meteor-icon-kit__solid-chevron-down-s" fill="none"
+ xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" 
+ d="M3.06066 0.93934L8 5.8787L12.9393 0.93934C13.5251 0.35355 14.4749 0.35355 15.0607 0.93934C15.6464 1.52513 15.6464 2.4749 15.0607 3.0607L9.0607 9.0607C8.4749 9.6464 7.5251 9.6464 6.9393 9.0607L0.93934 3.0607C0.35355 2.4749 0.35355 1.52513 0.93934 0.93934C1.52513 0.35355 2.47487 0.35355 3.06066 0.93934z" 
+ fill="white"/>
+</svg>
+  </div>
+ <ul tabindex="-1" class="dropdown-content menu  rounded-box z-1 w-165 h-120 bg-white/5
+   p-2 shadow-sm">
+  
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/moremenu/m1.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+  Avowed
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+ First-person Fantasy RPG
+  </div>
+  </div>
+ </div>
+   </li>
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/moremenu/m2.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+Blizzard Arcade Collection
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Bundle
+  </div>
+  </div>
+ </div>
+   </li>
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/moremenu/m3.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+Crash Bandicoot 4
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Platformer
+  </div>
+  </div>
+ </div>
+   </li>
+   
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/moremenu/m4.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+ DOOM: The Dark Ages
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Action Shooter
+  </div>
+  </div>
+ </div>
+   </li>
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/moremenu/m5.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+Heroes of the storm
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+MOBA
+  </div>
+  </div>
+ </div>
+   </li>
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/moremenu/m6.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+Sea of Thieves
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Action Adventure
+  </div>
+  </div>
+ </div>
+   </li>
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/moremenu/m7.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+  The Outer Worlds 2
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+ Action RPG
+  </div>
+  </div>
+ </div>
+   </li>
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <img src="./images/index/moremenu/m8.png" alt="">
+              </span>
+        <div class=" h-full flex flex-col w-[85%]">
+  <div class="text-white h-[50%] flex items-center text-[18px]">
+Tony Hawk's Pro Skater 3...
+  </div>
+  <div class="text-[16px] flex items-center text-gray-400 h-[50%]">
+Extreme Action Sports
+  </div>
+  </div>
+ </div>
+   </li>
+
+</ul>
+      </details>
+    </li>
+</div>
+
+
+</ul>
+
+</div>
+<!-- #endregion nav1 bottom -->
+
+<!-- #region search -->
+<div class="w-[20%] rounded-[5px] h-15 container flex items-center justify-end  ">
+ <div class="search group w-[90%] h-[55px]  ">
+              <label class="input w-full h-full bg-white/5 border-0 outline-0 
+              outline-offset-0 hover:bg-white/12 transition-all duration-250">
+      <svg
+                  width="24px"
+                  height="24px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                      stroke="#ffffff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </svg>
+                <input class="placeholder:text-white/50 placeholder:text-[14px] 
+                 hover:placeholder:text-white transition-all 
+                duration-250 focus:placeholder:text-white
+                 text-white text-[15px]"
+                  type="search"
+                  required
+                  placeholder="Search Shop"/>
+              </label>
+            </div>
+</div>
+<!-- #endregion search -->
+
+<!-- #region nav3 -->
+<div class="w-[13%]  rounded-[5px] h-15 flex justify-start ">
+<div class="dropdown dropdown-hover p-2 ">
+  <div tabindex="0" role="button" class="btn  bg-white/5 text-white border-none text-[12px] shadow-none">
+    Battle.net Balance
+     <svg  class="mt-2" width="8px" height="8px" viewBox="0 -3 16 16" 
+id="meteor-icon-kit__solid-chevron-down-s" fill="none"
+ xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" 
+ d="M3.06066 0.93934L8 5.8787L12.9393 0.93934C13.5251 0.35355 14.4749 0.35355 15.0607 0.93934C15.6464 1.52513 15.6464 2.4749 15.0607 3.0607L9.0607 9.0607C8.4749 9.6464 7.5251 9.6464 6.9393 9.0607L0.93934 3.0607C0.35355 2.4749 0.35355 1.52513 0.93934 0.93934C1.52513 0.35355 2.47487 0.35355 3.06066 0.93934z" 
+ fill="white"/>
+</svg>
+  </div>
+  <ul tabindex="-1" class="dropdown-content menu  rounded-box z-1 w-65 p-2 shadow-sm bg-white/5 ">
+    
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <svg width="20px" height="20px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    
+    <title>plus-circle</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs>
+
+</defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-464.000000, -1087.000000)" fill="white">
+            <path d="M480,1117 C472.268,1117 466,1110.73 466,1103 C466,1095.27 472.268,1089 480,1089 C487.732,1089 494,1095.27 494,1103 C494,1110.73 487.732,1117 480,1117 L480,1117 Z M480,1087 C471.163,1087 464,1094.16 464,1103 C464,1111.84 471.163,1119 480,1119 C488.837,1119 496,1111.84 496,1103 C496,1094.16 488.837,1087 480,1087 L480,1087 Z M486,1102 L481,1102 L481,1097 C481,1096.45 480.553,1096 480,1096 C479.447,1096 479,1096.45 479,1097 L479,1102 L474,1102 C473.447,1102 473,1102.45 473,1103 C473,1103.55 473.447,1104 474,1104 L479,1104 L479,1109 C479,1109.55 479.447,1110 480,1110 C480.553,1110 481,1109.55 481,1109 L481,1104 L486,1104 C486.553,1104 487,1103.55 487,1103 C487,1102.45 486.553,1102 486,1102 L486,1102 Z" id="plus-circle" sketch:type="MSShapeGroup">
+
+</path>
+        </g>
+    </g>
+</svg>
+              </span>
+        <div class=" h-full flex flex-col justify-center  items-center w-[40%]">
+  <div class="text-white h-[50%] flex items-center font-bold text-[12px]">
+  Add Balance
+  </div>
+  
+  </div>
+ </div>
+   </li>
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.5 7.75H18.1C18.5 7.27 18.75 6.67 18.75 6C18.75 4.48 17.52 3.25 16 3.25C14.32 3.25 12.84 4.14 12 5.46C11.16 4.14 9.68 3.25 8 3.25C6.48 3.25 5.25 4.48 5.25 6C5.25 6.67 5.5 7.27 5.9 7.75H4.5C3.81 7.75 3.25 8.31 3.25 9V11.5C3.25 12.1 3.68 12.58 4.25 12.7V19.5C4.25 20.19 4.81 20.75 5.5 20.75H18.5C19.19 20.75 19.75 20.19 19.75 19.5V12.7C20.32 12.58 20.75 12.1 20.75 11.5V9C20.75 8.31 20.19 7.75 19.5 7.75ZM19.25 11.25H12.75V9.25H19.25V11.25ZM16 4.75C16.69 4.75 17.25 5.31 17.25 6C17.25 6.69 16.69 7.25 16 7.25H12.84C13.18 5.82 14.47 4.75 16 4.75ZM8 4.75C9.53 4.75 10.82 5.82 11.16 7.25H8C7.31 7.25 6.75 6.69 6.75 6C6.75 5.31 7.31 4.75 8 4.75ZM4.75 9.25H11.25V11.25H4.75V9.25ZM5.75 12.75H11.25V19.25H5.75V12.75ZM18.25 19.25H12.75V12.75H18.25V19.25Z" 
+fill="white"/>
+</svg>
+              </span>
+        <div class=" h-full flex justify-center items-center flex-col w-[40%]">
+  <div class="text-white h-[50%] flex font-bold items-center text-[12px]">
+Gift Balance
+  </div>
+ 
+  </div>
+ </div>
+   </li>
+
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+         <svg
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M5.01112 11.5747L6.29288 10.2929C6.68341 9.90236 7.31657 9.90236 7.7071 10.2929C8.09762 10.6834 8.09762 11.3166 7.7071 11.7071L4.7071 14.7071C4.51956 14.8946 4.26521 15 3.99999 15C3.73477 15 3.48042 14.8946 3.29288 14.7071L0.292884 11.7071C-0.0976406 11.3166 -0.0976406 10.6834 0.292884 10.2929C0.683408 9.90236 1.31657 9.90236 1.7071 10.2929L3.0081 11.5939C3.22117 6.25933 7.61317 2 13 2C18.5229 2 23 6.47715 23 12C23 17.5228 18.5229 22 13 22C9.85817 22 7.05429 20.5499 5.22263 18.2864C4.87522 17.8571 4.94163 17.2274 5.37096 16.88C5.80028 16.5326 6.42996 16.599 6.77737 17.0283C8.24562 18.8427 10.4873 20 13 20C17.4183 20 21 16.4183 21 12C21 7.58172 17.4183 4 13 4C8.72441 4 5.23221 7.35412 5.01112 11.5747ZM13 5C13.5523 5 14 5.44772 14 6V11.5858L16.7071 14.2929C17.0976 14.6834 17.0976 15.3166 16.7071 15.7071C16.3166 16.0976 15.6834 16.0976 15.2929 15.7071L12.2929 12.7071C12.1054 12.5196 12 12.2652 12 12V6C12 5.44772 12.4477 5 13 5Z"
+                              fill="white"
+                            />
+                          </g>
+                        </svg>
+              </span>
+        <div class=" h-full flex flex-col justify-center items-center w-[50%]">
+  <div class="text-white h-[50%] flex items-center  font-bold text-[12px]">
+Balance History
+  </div>
+  
+  </div>
+ </div>
+   </li>
+   
+<li class=" flex flex-row flex-wrap h-[65px] cursor-pointer">
+      <div class="w-full gap-3 h-full flex flex-row shadow-sm hover:bg-[#272930]">
+      <span class="w-14 h-full flex items-center justify-center" >
+    <svg
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0" />
+
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+
+                          <g id="SVGRepo_iconCarrier">
+                            <path
+                              d="M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12ZM3.00683 12C3.00683 16.9668 7.03321 20.9932 12 20.9932C16.9668 20.9932 20.9932 16.9668 20.9932 12C20.9932 7.03321 16.9668 3.00683 12 3.00683C7.03321 3.00683 3.00683 7.03321 3.00683 12Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M13.5 18C13.5 18.8284 12.8284 19.5 12 19.5C11.1716 19.5 10.5 18.8284 10.5 18C10.5 17.1716 11.1716 16.5 12 16.5C12.8284 16.5 13.5 17.1716 13.5 18Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M11 12V14C11 14 11 15 12 15C13 15 13 14 13 14V12C13 12 13.4792 11.8629 13.6629 11.7883C13.6629 11.7883 13.9969 11.6691 14.2307 11.4896C14.4646 11.3102 14.6761 11.097 14.8654 10.8503C15.0658 10.6035 15.2217 10.3175 15.333 9.99221C15.4443 9.66693 15.5 9.4038 15.5 9C15.5 8.32701 15.3497 7.63675 15.0491 7.132C14.7596 6.61604 14.3476 6.21786 13.8132 5.93745C13.2788 5.64582 12.6553 5.5 11.9427 5.5C11.4974 5.5 11.1021 5.55608 10.757 5.66825C10.4118 5.7692 10.1057 5.9094 9.83844 6.08887C9.58236 6.25712 9.36525 6.4478 9.18711 6.66091C9.02011 6.86281 8.8865 7.0591 8.78629 7.24978C8.68609 7.44046 8.61929 7.6087 8.58589 7.75452C8.51908 7.96763 8.49125 8.14149 8.50238 8.27609C8.52465 8.41069 8.59145 8.52285 8.70279 8.61258C8.81413 8.70231 8.9867 8.79765 9.22051 8.8986C9.46546 8.97712 9.65473 9.00516 9.78834 8.98273C9.93308 8.96029 10.05 8.89299 10.1391 8.78083C10.1391 8.78083 10.6138 8.10569 10.7474 7.97109C10.8922 7.82528 11.0703 7.71312 11.2819 7.6346C11.4934 7.54487 11.7328 7.5 12 7.5C12.579 7.5 13.0076 7.64021 13.286 7.92062C13.5754 8.18982 13.6629 8.41629 13.6629 8.93225C13.6629 9.27996 13.6017 9.56038 13.4792 9.77349C13.3567 9.9866 13.1953 10.1605 12.9949 10.2951C12.9949 10.2951 12.7227 10.3991 12.5 10.5C12.2885 10.5897 11.9001 10.7381 11.6997 10.8503C11.5104 10.9512 11.4043 11.0573 11.2819 11.2144C11.1594 11.3714 11 11.7308 11 12Z"
+                              fill="white"
+                            />
+                          </g>
+                        </svg>
+              </span>
+        <div class=" h-full flex flex-col justify-center items-center w-[43%]">
+  <div class="text-white h-[50%] flex font-bold items-center text-[12px]">
+  Balance Help
+  </div>
+  
+  </div>
+ </div>
+   </li>
+</ul>
+      </details>
+    </li>
+  </ul>
+</div>
+</div>
+<!-- #endregion nav3 -->
+
+
+</div>
+</div>
+<!-- #endregion bottom header lg -->
+
+
 
 </div>
 <!-- #endregion header lg -->
+
+<!-- #region swiper1 -->
+<div class="w-full mx-auto h-[380px]">
+
+</div>
+<!-- #endregion swiper1 -->
+
+
+
+
+<!-- #region footer lg -->
+     <footer class="w-full  lg:flex  justify-center flex-col bg-gray-950 
+     mx-auto mt-25 lg:w-[1200px] hidden">
+       <div class="top w-full  h-[100px] flex flex-row ">
+        <!-- #region words -->
+        <div class="words w-[150%]  flex items-end justify-start 
+         text-[15px] font-semibold text-white">
+            <a href="#" class="w-[85px] h-[45px] rounded-[10px] p-2 hover:bg-[#212329] text-center items-center">Careers</a>
+            <a href="./about.html" class="w-[85px] h-[45px] rounded-[10px] p-2 hover:bg-[#212329] text-center items-center" >About</a>
+            <a href="#" class="w-[85px] h-[45px] rounded-[10px] p-2 hover:bg-[#212329] text-center items-center">Support</a>
+            <a href="#" class="w-[85px] h-[45px] rounded-[10px] p-2 hover:bg-[#212329] text-center items-center">ContactUs</a>
+            <a href="#" class="w-[85px] h-[45px] rounded-[10px] p-2 hover:bg-[#212329] text-center items-center ">Press</a>
+            <a href="#"class="w-[85px] h-[45px] rounded-[10px] p-2  hover:bg-[#212329] text-center items-center" > API</a>
+        </div>
+        <!-- #endregion words -->
+         <!-- #region language -->
+          <div class="language  p-2.5 w-[50%]  flex items-center 
+         text-[18px] font-bold text-white  justify-start">
+ <div class="lang text-end w-[40%] mt-10">
+  <details class="dropdown">
+  <summary class="btn m-1 btn-active
+   text-[#C4C5C7] p-4 border-0  rounded-[15px] bg-gray-900
+  hover:border-0 hover:bg-[#212329] ]">
+ <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#323232" stroke-width="2"/>
+<path d="M12 3.05554C14.455 5.25282 16 8.44597 16 12C16 15.554 14.455 18.7471 12 20.9444" stroke="#323232" stroke-width="2" stroke-linecap="round"/>
+<path d="M12.0625 21C9.57126 18.8012 8 15.5841 8 12C8 8.41592 9.57126 5.19883 12.0625 3" stroke="#323232" stroke-width="2" stroke-linecap="round"/>
+<path d="M3 12H21" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="text-white font-bold text-[15px]"> English(US)</span> 
+            <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 9L11.7874 14.7874V14.7874C11.9048 14.9048 12.0952 14.9048 12.2126 
+14.7874V14.7874L18 9" stroke="#323232" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round"/>
+            </svg>
+ </summary>
+ <ul class="menu dropdown-content flex flex-row  overflow-x-hidden
+  overflow-scroll bg-[#171926] right-0 rounded-box z-1 w-[450px] h-[430px] top-[-430px] p-2" >
+ <ul class="w-[48%] ml-0 flex flex-col justify-baseline">
+   <li class="flex flex-row w-full">
+   <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 
+   shadow-sm hover:text-white hover:bg-[#272930]">
+   <span class="w-[13%] h-full"></span>
+  <div class="card-body items-start justify-center gap-0 h-[60%] flex p-0 w-[85%]" >
+   <h6 class="card-title h-[40%] text-[16px]"> English(US)  </h6>
+    </div>
+   </div>
+  </li>
+ <li class="flex flex-row w-full">
+<div class="card w-full h-[45px] flex flex-row mt-2 
+mb-1 shadow-sm hover:text-white hover:bg-[#272930]" >
+ <span class="w-[13%] h-full"></span>
+<div class="card-body items-start justify-center gap-0 h-[60%] flex p-0 w-[85%]">
+<h6 class="card-title h-[40%] text-[16px]"> English(SEA) </h6>
+ </div>
+</div>
+ </li>
+ <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1
+ shadow-sm hover:text-white hover:bg-[#272930]">
+  <span class="w-[13%] h-full"></span>
+ <div class="card-body items-start justify-center gap-0 h-[60%] flex p-0 w-[85%]" >
+ <h6 class="card-title h-[40%] text-[16px]"> Español (Latino)</h6>
+   </div>
+ </div>
+ </li>
+ <li class="flex flex-row w-full">
+<div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm hover:text-white
+ hover:bg-[#272930]" >
+<span class="w-[13%] h-full"></span>
+<div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+<h6 class="card-title h-[40%] text-[16px]"> Português (Brasil)  </h6>
+ </div>
+</div>
+ </li>
+ <li class="flex flex-row w-full">
+<div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+ hover:text-white hover:bg-[#272930]" >
+  <span class="w-[13%] h-full"></span>
+<div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+ <h6 class="card-title h-[40%] text-[16px]">  ภาษาไทย </h6>
+ </div>
+ </div>
+</li>
+<li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+  <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+<h6 class="card-title h-[40%] text-[16px]">日本語</h6>
+</div>
+</div>
+  </li>
+ <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+<span class="w-[13%] h-full"></span>
+<div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+<h6 class="card-title h-[40%] text-[16px]">  Deutsch</h6>
+ </div>
+</div>
+ </li>
+ <li class="flex flex-row w-full">
+<div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+ hover:text-white hover:bg-[#272930]">
+ <span class="w-[13%] h-full"></span>
+ <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+ <h6 class="card-title h-[40%] text-[16px]">  English(UE) </h6>
+ </div>
+ </div>
+</li>
+ <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+  hover:text-white hover:bg-[#272930]" >
+ <span class="w-[13%] h-full"></span>
+  <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+<h6 class="card-title h-[40%] text-[16px]"> Español (EU) </h6></div>
+ </div>
+ </li>
+ </ul>
+ <ul class="w-[49%] flex flex-col justify-baseline">
+  <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+  <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+  <h6 class="card-title h-[40%] text-[16px]"> Français </h6>
+   </div>
+   </div>
+  </li>
+ <li class="flex flex-row w-full">
+ <div
+  class="card w-full h-[45px] flex flex-row mt-2 mb-1 
+  shadow-sm hover:text-white hover:bg-[#272930]">
+  <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+     <h6 class="card-title h-[40%] text-[16px]"> Italiano </h6>
+  </div>
+  </div>
+  </li>
+   <li class="flex flex-row w-full">
+  <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+   hover:text-white hover:bg-[#272930]">
+   <span class="w-[13%] h-full"></span>
+  <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+   <h6 class="card-title h-[40%] text-[16px]">Polski</h6>
+     </div>
+   </div>
+</li>
+    <li class="flex flex-row w-full">
+<div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+ hover:text-white hover:bg-[#272930]" >
+  <span class="w-[13%] h-full"></span>
+ <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+  <h6 class="card-title h-[40%] text-[16px]">Português (EU)</h6>
+     </div>
+   </div>
+ </li>
+  <li class="flex flex-row w-full">
+   <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+    hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+ <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+  <h6 class="card-title h-[40%] text-[16px]">  Русский </h6>
+   </div>
+  </div>
+ </li>
+ <li class="flex flex-row w-full">
+  <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 
+  shadow-sm hover:text-white hover:bg-[#272930]">
+       <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+ <h6 class="card-title h-[40%] text-[16px]">Türkçe</h6>
+  </div>
+  </div>
+</li>
+<li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+<div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+   <h6 class="card-title h-[40%] text-[16px]">한국어</h6> </div>
+   </div>
+   </li>
+    <li class="flex flex-row w-full">
+   <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+    hover:text-white hover:bg-[#272930]" >
+    <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]"  >
+ <h6 class="card-title h-[40%] text-[16px]"> 繁體中文 </h6>
+                 </div>
+             </div>
+          </li>
+   <li class="flex flex-row w-full">
+  <div class="card w-full h-[45px] flex flex-row mt-2 mb-1
+   shadow-sm hover:text-white hover:bg-[#272930]" >
+                        <span class="w-[13%] h-full"></span>
+   <div  class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+<h6 class="card-title h-[40%] text-[16px]">  简体中 </h6>
+       </div>
+     </div>
+   </li>
+ </ul>
+ </ul>
+ </details>
+ </div>
+</div>
+          <!-- #endregion language -->
+
+
+
+         </div>
+        <!-- #endregion top -->
+        
+   <div class="flex justify-center">  <hr class="bg-gray-700 w-[99%]"></div>
+      <!-- #region bottom -->
+    <div class="bottom w-full   h-[250px] ">
+      <!-- #region inside -->
+<div class="inside flex ">
+ <a class=" w-[15%]  flex justify-start " href="index.html">
+  <img src="./images/logo.png" alt=""class="w-[370px] h-fit mt-3">
+</a>
+ <!-- #region textfooter -->
+<div class="flex flex-col  w-[60%] text-[12px] p-2 text-gray-400 ">
+<span>©2025 Blizzard Entertainment, Inc.</span>
+<div class="flex flex-row gap-3">
+  All
+<span class="underline text-[#b3b4b6] hover:text-white cursor-pointer"> trademarks </span>
+<span> referenced herein are the properties of their respective owners. </span>
+</div>
+ <div class="foot gap-3 flex flex-wrap mt-5 text-[10px] text-gray-400">
+ <a class="hover:text-white" href="#">Privacy</a>
+ <a class="hover:text-white" href="#">Legal</a>
+ <a class="hover:text-white" href="#">Terms</a>
+ <a class="hover:text-white" href="#">Cookie Policy</a>
+<a class="hover:text-white" href="#">Cookie Settings</a>
+           </div>
+</div>
+<!-- #endregion textfooter -->
+ <!-- #region logofooter  -->
+<div class="w-[15%]   h-fit flex  flex-row justify-evenly items-center mt-5">
+  <button class="w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200"> 
+    <svg aria-label="X logo" width="20" height="18" viewBox="0 0 300 271" xmlns="http://www.w3.org/2000/svg" > <path fill="currentColor"
+       d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z"
+   /></svg>
+  </button>
+  <button class="w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200"  ">
+    <svg  width="16"  height="16"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" >
+   <path  fill="white"  d="M8 12h5V8c0-6 4-7 11-6v5c-4 0-5 0-5 3v2h5l-1 6h-4v12h-6V18H8z" ></path> </svg> 
+ </button>
+<button class=" w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200" ">
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>instagram [#167]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+
+</defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#000000">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+
+</path>
+            </g>
+        </g>
+    </g>
+</svg>
+</button>
+</div>
+<!-- #endregion logofooter -->
+</div>
+<!-- #endregion inside -->
+    </div>
+    <!-- #endregion bottom -->
+     </footer>
+     <!-- #endregion footer lg -->
+
+ <!-- #region footer phone -->
+    <footer class="w-full    flex bg-gray-950 lg:hidden ">
+      <div class="inside flex flex-wrap w-fit bg-gray-950 justify-center items-center">
+          <!-- #region language -->
+         <div class=" w-[60%] text-center mt-[250px] ">
+              <details class="dropdown  ">
+                <summary 
+                  class="btn  btn-active text-white  border-0 flex 
+                  hover:border-0 hover:bg-[#212329] bg-gray-900 g-3">
+                  <svg width="23px" height="23px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#323232" stroke-width="2"/>
+<path d="M12 3.05554C14.455 5.25282 16 8.44597 16 12C16 15.554 14.455 18.7471 12 20.9444" stroke="#323232" stroke-width="2" stroke-linecap="round"/>
+<path d="M12.0625 21C9.57126 18.8012 8 15.5841 8 12C8 8.41592 9.57126 5.19883 12.0625 3" stroke="#323232" stroke-width="2" stroke-linecap="round"/>
+<path d="M3 12H21" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="text-white font-bold text-[20px]"> English (US)</span> 
+            <svg width="18px" height="18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 9L11.7874 14.7874V14.7874C11.9048 14.9048 12.0952 14.9048 12.2126 
+14.7874V14.7874L18 9" stroke="#323232" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round"/>
+            </svg>
+   </summary>
+ <ul class="menu dropdown-content h-[460px]  top-[-460px] right-[-100px] 
+ overflow-scroll flex bg-gray-950 text-white rounded-box z-1 w-[389px]  " >
+ <ul class="w-full ml-0 flex flex-col justify-baseline">
+   <li class="flex flex-row w-full">
+     <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 
+     shadow-sm hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+   <div class="card-body items-start justify-center gap-0 h-[60%] flex p-0 w-[85%]">
+ <h6 class="card-title h-[40%] text-[16px]">  English(US)  </h6>
+         </div>
+     </div>
+</li>
+<li class="flex flex-row w-full">
+  <div class="card w-full h-[45px] flex flex-row 
+  mt-2 mb-1 shadow-sm hover:text-white hover:bg-[#272930]">
+ <span class="w-[13%] h-full"></span>
+  <div class="card-body items-start justify-center gap-0 h-[60%] flex p-0 w-[85%]">
+    <h6 class="card-title h-[40%] text-[16px]"> English(SEA) </h6>
+  </div>
+ </div>
+</li>
+  <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 
+ shadow-sm hover:text-white hover:bg-[#272930]">
+  <span class="w-[13%] h-full"></span>
+   <div class="card-body items-start justify-center gap-0 h-[60%] flex p-0 w-[85%]" >
+ <h6 class="card-title h-[40%] text-[16px]"> Español (Latino) </h6>
+   </div>
+  </div>
+</li>
+<li class="flex flex-row w-full">
+<div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+hover:text-white hover:bg-[#272930]">
+  <span class="w-[13%] h-full]"></span>
+ <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+ <h6 class="card-title h-[40%] text-[16px]"> Português (Brasil)</h6>
+   </div>
+  </div>
+ </li>
+   <li class="flex flex-row w-full">
+   <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+    hover:text-white hover:bg-[#272930]" >
+     <span class="w-[13%] h-full"></span>
+  <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+     <h6 class="card-title h-[40%] text-[16px]"> ภาษาไทย  </h6>
+       </div>
+     </div>
+ </li>
+<li class="flex flex-row w-full">
+   <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+    hover:text-white hover:bg-[#272930]" >
+     <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+       <h6 class="card-title h-[40%] text-[16px]">日本語</h6> </div>
+            </div>
+          </li>
+     <li class="flex flex-row w-full">
+   <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 
+   shadow-sm hover:text-white hover:bg-[#272930]">
+       <span class="w-[13%] h-full"></span>
+       <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+    <h6 class="card-title h-[40%] text-[16px]">Deutsch </h6>
+          </div>
+       </div>
+    </li>
+ <li class="flex flex-row w-full">
+    <div class="card w-full h-[45px] flex flex-row mt-2 mb-1
+     shadow-sm hover:text-white hover:bg-[#272930]" >
+     <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+    <h6 class="card-title h-[40%] text-[16px]"> English(UE)</h6>
+            </div>
+         </div>
+        </li>
+     
+<li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+  <span class="w-[13%] h-full"></span>
+        <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+       <h6 class="card-title h-[40%] text-[16px]"> Français  </h6>
+         </div>
+       </div>
+    </li>
+  <li class="flex flex-row w-full">
+     <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+     hover:text-white hover:bg-[#272930]">
+   <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+    <h6 class="card-title h-[40%] text-[16px]"> Italiano  </h6>
+           </div>
+       </div>
+    </li>
+ <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+    <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+  <h6 class="card-title h-[40%] text-[16px]">Polski</h6>
+     </div>
+   </div>
+</li>
+  <li class="flex flex-row w-full">
+    <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+    hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+      <div  class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]"  >
+        <h6 class="card-title h-[40%] text-[16px]"> Português (EU) </h6>
+         </div>
+        </div>
+       </li>
+  <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+ hover:text-white hover:bg-[#272930]" >
+  <span class="w-[13%] h-full"></span>
+    <div  class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+ <h6 class="card-title h-[40%] text-[16px]"> Русский </h6>
+        </div>
+       </div>
+     </li>
+ <li class="flex flex-row w-full">
+  <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+  hover:text-white hover:bg-[#272930]"  >
+        <span class="w-[13%] h-full"></span>
+   <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+         <h6 class="card-title h-[40%] text-[16px]">Türkçe</h6>
+              </div>
+        </div>
+  </li>
+  <li class="flex flex-row w-full">
+ <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+  hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+<div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]">
+    <h6 class="card-title h-[40%] text-[16px]">한국어</h6>
+           </div>
+        </div>
+     </li>
+  <li class="flex flex-row w-full">
+    <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm
+     hover:text-white hover:bg-[#272930]" >
+   <span class="w-[13%] h-full"></span>
+<div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+  <h6 class="card-title h-[40%] text-[16px]"> 繁體中文 </h6>
+           </div>
+          </div>
+       </li>
+ <li class="flex flex-row w-full">
+  <div class="card w-full h-[45px] flex flex-row mt-2 mb-1 shadow-sm 
+  hover:text-white hover:bg-[#272930]">
+     <span class="w-[13%] h-full"></span>
+  <div class="card-body justify-center gap-0 items-start h-[60%] flex p-0 w-[85%]" >
+     <h6 class="card-title h-[40%] text-[16px]"> 简体中文  </h6>
+               </div>
+            </div>
+         </li>
+       </ul>
+      </ul>
+    </details>
+ </div>
+        
+         <!-- #endregion language -->
+        <div class="w-[80%] h-15  mt-5 flex leading-9 justify-center gap-3 text-white font-bold text-[22px]">
+        
+           <a href="#" class="w-fit  h-15 rounded-[10px] p-2 hover:bg-[#212329] text-center items-center">Careers</a>
+            <a href="#" class="w-fit h-15 rounded-[10px] p-2 hover:bg-[#212329] text-center items-center" >About</a>
+            <a href="#" class="w-fit h-15 rounded-[10px] p-2 hover:bg-[#212329] text-center items-center">Support</a>
+
+         </div>
+
+          <div  class="w-[80%] h-15   flex leading-9 justify-center gap-3 text-white font-bold text-[20px]"   >
+            <a href="#" class="w-fit h-15 rounded-[10px] p-2 hover:bg-[#212329] text-center items-center">ContactUs</a>
+            <a href="#" class="w-fit h-15 rounded-[10px] p-2 hover:bg-[#212329] text-center items-center ">Press</a>
+            <a href="#"class="w-fit h-15 rounded-[10px] p-2  hover:bg-[#212329] text-center items-center" > API</a>
+      
+          </div>
+            
+          <div><img src="./images/logo.png" alt="" class="w-[250px] h-[70px] mt-5"></div>
+
+          <div class="w-[80%] h-12 mt-8 flex  flex-row justify-center gap-20">
+         <button class="w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200"> 
+    <svg aria-label="X logo" width="20" height="18" viewBox="0 0 300 271" xmlns="http://www.w3.org/2000/svg" > <path fill="currentColor"
+       d="m236 0h46l-101 115 118 156h-92.6l-72.5-94.8-83 94.8h-46l107-123-113-148h94.9l65.5 86.6zm-16.1 244h25.5l-165-218h-27.4z"
+   /></svg>
+  </button>
+  <button class="w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200"  >
+   <svg width="20px" height="20px" viewBox="-5 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>facebook [#176]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+
+</defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)" fill="#000000">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id="facebook-[#176]">
+
+</path>
+            </g>
+        </g>
+    </g>
+</svg>
+ </button>
+
+ <button class="w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200"  >
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>instagram [#167]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+
+</defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7439.000000)" fill="#000000">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792" id="instagram-[#167]">
+
+</path>
+            </g>
+        </g>
+    </g>
+</svg>
+ </button>
+ 
+     </div>
+ <!-- #region textfooter -->
+<div class="flex flex-col w-[70%] g-3 p-2 text-gray-400 mt-5 justify-center items-center">
+<span class="text-[16px] text-center">©2025 Blizzard Entertainment, Inc.</span>
+<div class="flex flex-col gap-3 text-center">
+ <div class="text-[16px]">
+   All
+<span class="underline text-[#b3b4b6] hover:text-white cursor-pointer"> trademarks </span>
+<span> referenced herein are the properties of</span>
+<span class="text-[16px] mb-3"> their respective owners. </span>
+</div>
+
+</div>
+</div>
+
+  <div class="foot gap-4 flex flex-wrap mt-5 text-[18px] text-gray-400 justify-center items-center">
+ <a class="hover:text-white" href="#">Privacy</a>
+ <a class="hover:text-white" href="#">Legal</a>
+ <a class="hover:text-white" href="#">Terms</a>
+ <a class="hover:text-white" href="#">Cookie Policy</a>
+<a class="hover:text-white" href="#">Cookie Settings</a>
+           </div> 
+
+
+
+
+      </div>
+      <!-- #endregion inside -->
+
+    </footer>
+<!-- #endregion footer -->
+
 
 
 
