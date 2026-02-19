@@ -830,7 +830,69 @@ hover:text-white hover:bg-[#272930]">
 
 
   </div>
- <!-- #endregion wraper -->
+   <!-- #endregion wraper -->
 
-</body>
-</html>
+    <!-- Theme toggle button + minimal light-theme overrides (from index.html) -->
+    <style>
+      /* Floating toggle button */
+      #theme-toggle {
+        position: fixed;
+        right: 16px;
+        bottom: 88px;
+        z-index: 80;
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        background: rgba(17,24,39,0.9);
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 6px 14px rgba(2,6,23,0.6);
+        font-size: 18px;
+      }
+      #theme-toggle:focus { outline: 2px solid rgba(99,102,241,0.5); }
+
+      /* Dark-gray light mode: body uses a dark gray background with light text for contrast */
+      html[data-theme="light"] body { background: #1f2937 !important; color: #f8fafc !important; }
+      html[data-theme="light"] .text-white { color: #f8fafc !important; }
+      html[data-theme="light"] .bg-gray-950 { background-color: #1f2937 !important; }
+      html[data-theme="light"] .bg-gray-900 { background-color: #111827 !important; }
+      html[data-theme="light"] .bg-gray-800 { background-color: #374151 !important; }
+      html[data-theme="light"] .menu a { color: #f8fafc !important; }
+      /* Interactive hover tweak: subtle light overlay */
+      html[data-theme="light"] .hover\:bg-white\/5:hover { background-color: rgba(248,250,252,0.06) !important; }
+      /* Button primary accent (caramel) kept for highlights */
+      html[data-theme="light"] .btn.btn-primary { background-color: #c69c6d !important; color: #ffffff !important; }
+    </style>
+
+    <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var themeBtn = document.getElementById('theme-toggle');
+        function applyTheme(t) {
+          document.documentElement.setAttribute('data-theme', t);
+          if (themeBtn) themeBtn.textContent = (t === 'light') ? '🌞' : '🌙';
+          try { localStorage.setItem('theme', t); } catch (e) {}
+        }
+        var savedTheme = null;
+        try { savedTheme = localStorage.getItem('theme'); } catch (e) {}
+        if (!savedTheme) {
+          savedTheme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+        }
+        applyTheme(savedTheme);
+
+        if (themeBtn) {
+          themeBtn.addEventListener('click', function () {
+            var current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+            applyTheme(current === 'light' ? 'dark' : 'light');
+          });
+        }
+      });
+    </script>
+
+  </body>
+  </html>

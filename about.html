@@ -7,7 +7,7 @@
     <link rel="icon" href="./images/favicon.about.png">
     <link rel="stylesheet" href="./src/css/output.css">
 </head>
-<body>
+<body class=" bg-gray-950">
     <!-- #region wraperabout -->
   <div class="wraper w-[100%] flex flex-col lg:w-[100%] ">
     <!-- #region header phone -->
@@ -38,7 +38,7 @@
       <!-- Sidebar content here -->
       <li class=" w-full h-15 flex flex-row justify-center items-center">
          <div class="menu flex w-full h-[55px] mr-10  ">
-      <button id="side-btn" class="close  bg-gray-900 
+      <button id="side-btn" class="burger  bg-gray-900 
        hover:bg-[#23252B] shadow-none border-none lg:hidden">
           <svg fill="#C4C5C7" width="25px" height="25px" viewBox="0 0 200 200" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title></title><path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,
             149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z"></path></g></svg>  
@@ -355,7 +355,7 @@ All Games
 </div>
 
 
-   <!-- end burger -->  
+   <!-- #endregion burger -->  
 
 
 <img src="./images/about/headerbliz.png"  class="w-25 h-14 text-center ml-4"   alt="">
@@ -384,18 +384,20 @@ data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><defs>
           <img src="./images/about/headerbliz.png" 
           class="w-22 h-8 mr-5" alt="">
         </div>
-        <button id="side-btn" class="btn  bg-gray-900 
+        <button id="side-btn" class="twoburger  bg-gray-900 
        hover:bg-[#23252B] shadow-none border-none mt-4 pr-15 lg:hidden">
           <svg fill="#C4C5C7" width="25px" height="25px" viewBox="0 0 200 200" data-name="Layer 1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title></title><path d="M114,100l49-49a9.9,9.9,0,0,0-14-14L100,86,51,37A9.9,9.9,0,0,0,37,51l49,49L37,
             149a9.9,9.9,0,0,0,14,14l49-49,49,49a9.9,9.9,0,0,0,14-14Z"></path></g></svg>  
                   </button>
       </li>
       <li>
-        <button class="btn btn-xs bg-blue-700 hover:bg-blue-400
-         sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl w-full h-[45px] shadow-none border-none
-         text-[20px] mt-10 font-bold text-white">
-         Log in
-        </button>
+        <a href="./login.html" class="w-full bg-blue-600 flex mt-5
+        shadow-none hover:bg-blue-800 text-white items-center 
+        justify-center">
+         
+            Log in
+          
+        </a>
         </li>
 
         <li class="mt-3 font-bold p-1 text-white text-[22px] hover:bg-gray-600 w-full rounded-[10px]">
@@ -1646,17 +1648,91 @@ clip-rule="evenodd"/></svg>
  
    </div>
     <!-- #endregion wraperabout -->
-    <script>
-      let burger=document.querySelector(".burger")
-      let close=document.querySelector(".close")
-      let menumobile=document.querySelector(".menumobile")
-      burger.addEventListener("click", ()=>{
-        menumobile.classList.add("!left-0")
+
+  <!-- Theme toggle button + minimal light-theme overrides (from index.html) -->
+  <style>
+    /* Floating toggle button */
+    #theme-toggle {
+      position: fixed;
+      right: 16px;
+      bottom: 88px;
+      z-index: 80;
+      width: 44px;
+      height: 44px;
+      border-radius: 8px;
+      background: rgba(17,24,39,0.9);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 14px rgba(2,6,23,0.6);
+      font-size: 18px;
+    }
+    #theme-toggle:focus { outline: 2px solid rgba(99,102,241,0.5); }
+
+    /* Dark-gray light mode: body uses a dark gray background with light text for contrast */
+    html[data-theme="light"] body { background: #1f2937 !important; color: #f8fafc !important; }
+    html[data-theme="light"] .text-white { color: #f8fafc !important; }
+    html[data-theme="light"] .bg-gray-950 { background-color: #1f2937 !important; }
+    html[data-theme="light"] .bg-gray-900 { background-color: #111827 !important; }
+    html[data-theme="light"] .bg-gray-800 { background-color: #374151 !important; }
+    html[data-theme="light"] .menu a { color: #f8fafc !important; }
+    /* Interactive hover tweak: subtle light overlay */
+    html[data-theme="light"] .hover\:bg-white\/5:hover { background-color: rgba(248,250,252,0.06) !important; }
+    /* Button primary accent (caramel) kept for highlights */
+    html[data-theme="light"] .btn.btn-primary { background-color: #c69c6d !important; color: #ffffff !important; }
+  </style>
+
+  <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var themeBtn = document.getElementById('theme-toggle');
+      function applyTheme(t) {
+        document.documentElement.setAttribute('data-theme', t);
+        if (themeBtn) themeBtn.textContent = (t === 'light') ? '🌞' : '🌙';
+        try { localStorage.setItem('theme', t); } catch (e) {}
+      }
+      var savedTheme = null;
+      try { savedTheme = localStorage.getItem('theme'); } catch (e) {}
+      if (!savedTheme) {
+        savedTheme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
+      }
+      applyTheme(savedTheme);
+
+      if (themeBtn) {
+        themeBtn.addEventListener('click', function () {
+          var current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+          applyTheme(current === 'light' ? 'dark' : 'light');
+        });
+      }
+    });
+  </script>
+
+  <script>
+    (function () {
+      var mobileToggle = document.getElementById('my-drawer-1');
+      var accountToggle = document.getElementById('my-drawer-5');
+
+      function closeDrawers() {
+        if (mobileToggle) mobileToggle.checked = false;
+        if (accountToggle) accountToggle.checked = false;
+      }
+
+      // Only treat clicks on controls inside the drawer-side as "close" actions
+      var inMenuSelectors = '.drawer-side .burger, .drawer-side .burger2, .drawer-side #side-btn, .drawer-side button';
+      var inMenuBtns = document.querySelectorAll(inMenuSelectors);
+      inMenuBtns.forEach(function (btn) {
+        btn.addEventListener('click', function (e) {
+          // prevent default navigation if it's an anchor/button inside menu
+          try { e.preventDefault(); } catch (err) {}
+          closeDrawers();
+        });
       });
-      close.addEventListener("click",()=>{
-        menumobile.classList.remove("!left-0")
-        menumobile.classList.add("!-left-[100%]")
-      })
-    </script>
+    })();
+  </script>
+
 </body>
 </html>
