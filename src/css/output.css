@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-red-600: oklch(57.7% 0.245 27.325);
     --color-red-800: oklch(44.4% 0.177 26.899);
+    --color-amber-900: oklch(41.4% 0.112 45.904);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-green-700: oklch(52.7% 0.154 150.069);
@@ -46,6 +47,7 @@
     --radius-md: 0.375rem;
     --radius-lg: 0.5rem;
     --radius-2xl: 1rem;
+    --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1291,11 +1293,20 @@
   .left-1 {
     left: calc(var(--spacing) * 1);
   }
+  .left-15 {
+    left: calc(var(--spacing) * 15);
+  }
+  .left-18 {
+    left: calc(var(--spacing) * 18);
+  }
   .left-40 {
     left: calc(var(--spacing) * 40);
   }
   .left-45 {
     left: calc(var(--spacing) * 45);
+  }
+  .left-80 {
+    left: calc(var(--spacing) * 80);
   }
   .textarea {
     @layer daisyui.l1.l2.l3 {
@@ -1904,6 +1915,9 @@
   .h-\[15\%\] {
     height: 15%;
   }
+  .h-\[30px\] {
+    height: 30px;
+  }
   .h-\[33px\] {
     height: 33px;
   }
@@ -1948,6 +1962,9 @@
   }
   .h-\[100px\] {
     height: 100px;
+  }
+  .h-\[140px\] {
+    height: 140px;
   }
   .h-\[150px\] {
     height: 150px;
@@ -2039,6 +2056,12 @@
   .w-45 {
     width: calc(var(--spacing) * 45);
   }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
+  }
+  .w-55 {
+    width: calc(var(--spacing) * 55);
+  }
   .w-60 {
     width: calc(var(--spacing) * 60);
   }
@@ -2065,6 +2088,12 @@
   }
   .w-165 {
     width: calc(var(--spacing) * 165);
+  }
+  .w-\[\%\] {
+    width: %;
+  }
+  .w-\[4\%\] {
+    width: 4%;
   }
   .w-\[7\%\] {
     width: 7%;
@@ -2138,6 +2167,9 @@
   .w-\[70\%\] {
     width: 70%;
   }
+  .w-\[70px\] {
+    width: 70px;
+  }
   .w-\[80\%\] {
     width: 80%;
   }
@@ -2174,6 +2206,9 @@
   .w-\[170px\] {
     width: 170px;
   }
+  .w-\[180px\] {
+    width: 180px;
+  }
   .w-\[200px\] {
     width: 200px;
   }
@@ -2206,6 +2241,9 @@
   }
   .w-\[700px\] {
     width: 700px;
+  }
+  .w-\[px\] {
+    width: px;
   }
   .w-fit {
     width: fit-content;
@@ -2410,6 +2448,9 @@
   .bg-\[\#171926\] {
     background-color: #171926;
   }
+  .bg-amber-900 {
+    background-color: var(--color-amber-900);
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -2529,6 +2570,9 @@
   }
   .text-\[10px\] {
     font-size: 10px;
+  }
+  .text-\[11px\] {
+    font-size: 11px;
   }
   .text-\[12px\] {
     font-size: 12px;
