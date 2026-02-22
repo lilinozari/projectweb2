@@ -16,7 +16,7 @@
       <div class="inside bg-gray-950  w-full  flex-col flex justify-center items-center">
        
 
-         <div class=" img w-full h-[70px] flex justify-center items-center ">
+         <div class=" imgg  w-full h-[70px] flex justify-center items-center ">
             <img class="w-[30%] h-10"   src="./images/logo.png" alt="Battle">
         </div>
  
@@ -478,7 +478,7 @@ mb-1 shadow-sm hover:text-white hover:bg-[#272930]" >
     <div class="bottom w-full  h-[150px] ">
       <!-- #region inside -->
 <div class="inside flex ">
- <a class=" w-[30%]  flex justify-end" href="index.html">
+ <a class=" w-[30%]  flex justify-end" href="./index.html">
   <img src="./images/logo.png" alt=""class="w-[170px] h-fit mt-3">
 </a>
  <!-- #region textfooter -->
@@ -736,7 +736,7 @@ hover:text-white hover:bg-[#272930]">
       
           </div>
             
-          <div><img src="./images/logo.png" alt="" class="w-[250px] h-[70px] mt-5"></div>
+          <div><a href="./index.html"><img src="./images/logo.png" alt="" class="w-[250px] h-[70px] mt-5"></a></div>
 
           <div class="w-[80%] h-12 mt-8 flex  flex-row justify-center gap-20">
          <button class="w-10 h-10 mt-2 bg-gray-800  rounded-[50%] flex justify-center items-center hover:bg-gray-200"> 
@@ -855,22 +855,30 @@ hover:text-white hover:bg-[#272930]">
       }
       #theme-toggle:focus { outline: 2px solid rgba(99,102,241,0.5); }
 
-      /* Dark-gray light mode: body uses a dark gray background with light text for contrast */
-      html[data-theme="light"] body { background: #1f2937 !important; color: #f8fafc !important; }
-      html[data-theme="light"] .text-white { color: #f8fafc !important; }
-      html[data-theme="light"] .bg-gray-950 { background-color: #1f2937 !important; }
-      html[data-theme="light"] .bg-gray-900 { background-color: #111827 !important; }
-      html[data-theme="light"] .bg-gray-800 { background-color: #374151 !important; }
-      html[data-theme="light"] .menu a { color: #f8fafc !important; }
-      /* Interactive hover tweak: subtle light overlay */
-      html[data-theme="light"] .hover\:bg-white\/5:hover { background-color: rgba(248,250,252,0.06) !important; }
-      /* Make all buttons dark navy blue in light mood */
+      /* Dark gray light mode: charcoal background with light gray and white accents */
+      html[data-theme="light"] body { background: #2B2B2B !important; color: #E8E8E8 !important; }
+      html[data-theme="light"] .text-white { color: #E8E8E8 !important; }
+      html[data-theme="light"] .bg-gray-950 { background-color: #2B2B2B !important; }
+      html[data-theme="light"] .bg-gray-900 { background-color: #1F1F1F !important; }
+      html[data-theme="light"] .bg-gray-800 { background-color: #3D3D3D !important; }
+      html[data-theme="light"] .menu a { color: #E8E8E8 !important; }
+      /* Interactive hover tweak: light gray glow */
+      html[data-theme="light"] .hover\:bg-white\/5:hover { background-color: rgba(232,232,232,0.08) !important; }
+      /* Make all buttons light gray in dark gray mode */
       html[data-theme="light"] button,
       html[data-theme="light"] .btn,
       html[data-theme="light"] .btn-primary {
-        background-color: #001f3f !important;
+        background-color: #5A5A5A !important;
         color: #ffffff !important;
-        border-color: transparent !important;
+        border-color: #7A7A7A !important;
+        border: 2px solid #7A7A7A !important;
+      }
+      /* Preserve original logo colors in light mode for logo1 and logo2 regions */
+      html[data-theme="light"] .bg-white,
+      html[data-theme="light"] .bg-blue-500,
+      html[data-theme="light"] .bg-black,
+      html[data-theme="light"] .bg-green-500 {
+        background-color: inherit !important;
       }
     </style>
 

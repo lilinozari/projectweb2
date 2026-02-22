@@ -4567,22 +4567,23 @@ hover:text-white hover:bg-[#272930]">
     }
     #theme-toggle:focus { outline: 2px solid rgba(99,102,241,0.5); }
 
-    /* Dark-gray light mode: body uses a dark gray background with light text for contrast */
-    html[data-theme="light"] body { background: #1f2937 !important; color: #f8fafc !important; }
-    html[data-theme="light"] .text-white { color: #f8fafc !important; }
-    html[data-theme="light"] .bg-gray-950 { background-color: #1f2937 !important; }
-    html[data-theme="light"] .bg-gray-900 { background-color: #111827 !important; }
-    html[data-theme="light"] .bg-gray-800 { background-color: #374151 !important; }
-    html[data-theme="light"] .menu a { color: #f8fafc !important; }
-    /* Interactive hover tweak: subtle light overlay */
-    html[data-theme="light"] .hover\:bg-white\/5:hover { background-color: rgba(248,250,252,0.06) !important; }
-    /* Make all buttons dark navy blue in light mood */
+    /* Dark gray light mode: charcoal background with light gray and white accents */
+    html[data-theme="light"] body { background: #2B2B2B !important; color: #E8E8E8 !important; }
+    html[data-theme="light"] .text-white { color: #E8E8E8 !important; }
+    html[data-theme="light"] .bg-gray-950 { background-color: #2B2B2B !important; }
+    html[data-theme="light"] .bg-gray-900 { background-color: #1F1F1F !important; }
+    html[data-theme="light"] .bg-gray-800 { background-color: #3D3D3D !important; }
+    html[data-theme="light"] .menu a { color: #E8E8E8 !important; }
+    /* Interactive hover tweak: light gray glow */
+    html[data-theme="light"] .hover\:bg-white\/5:hover { background-color: rgba(232,232,232,0.08) !important; }
+    /* Make all buttons light gray in dark gray mode */
     html[data-theme="light"] button,
     html[data-theme="light"] .btn,
     html[data-theme="light"] .btn-primary {
-      background-color: #001f3f !important;
+      background-color: #5A5A5A !important;
       color: #ffffff !important;
-      border-color: transparent !important;
+      border-color: #7A7A7A !important;
+      border: 2px solid #7A7A7A !important;
     }
   </style>
 
