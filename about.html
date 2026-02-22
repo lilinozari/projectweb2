@@ -1681,8 +1681,14 @@ clip-rule="evenodd"/></svg>
     html[data-theme="light"] .menu a { color: #f8fafc !important; }
     /* Interactive hover tweak: subtle light overlay */
     html[data-theme="light"] .hover\:bg-white\/5:hover { background-color: rgba(248,250,252,0.06) !important; }
-    /* Button primary accent (caramel) kept for highlights */
-    html[data-theme="light"] .btn.btn-primary { background-color: #c69c6d !important; color: #ffffff !important; }
+    /* Make all buttons dark navy blue in light mood */
+    html[data-theme="light"] button,
+    html[data-theme="light"] .btn,
+    html[data-theme="light"] .btn-primary {
+      background-color: #001f3f !important;
+      color: #ffffff !important;
+      border-color: transparent !important;
+    }
   </style>
 
   <button id="theme-toggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
